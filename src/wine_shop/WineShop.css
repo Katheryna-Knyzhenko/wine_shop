@@ -7,6 +7,8 @@
     height: 40%;
     background-size: contain;
     width: 100%;
+    display: inline-block;
+
 
 }
 .headerPicture {
@@ -17,4 +19,7 @@ position: absolute;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
+    display: inline-block;
+    background-size: 100%;
+    background-position: 50% 50%;
 }
