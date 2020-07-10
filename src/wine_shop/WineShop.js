@@ -4,8 +4,12 @@ import './WineShop.css';
 function WineShop() {
   return (
     <div className="wrapper">
+        <div className='head'>
         <div className ='headerPicture'/>
-        <div className='vinice-31'/>
+        </div>
+        <div className='middle'>
+        <div className='middlePicture'/>
+    </div>
     </div>
   );
 }
