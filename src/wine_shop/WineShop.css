@@ -51,6 +51,8 @@
     position: absolute;
     display: block;
 }
+
+
 .exploreText {
     z-index: 5;
     top: 58%;
@@ -59,17 +61,26 @@
     height:100%;
     position: absolute;
     display: block;
-    font-family: Abraham Lincoln;
+    font-family:'Abraham Lincoln';
     font-style: normal;
     font-weight: normal;
     font-size: 90px;
     line-height: 90px;
     color: white;
+    text-align: center;
 }
 @font-face {
-    font-family: Roboto;
-    src: url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+    font-family: 'Abraham Lincoln';
+    src: url('../fonts/AbrahamLincoln.eot');
+    src: local('☺'), url('../fonts/AbrahamLincoln.woff') format('woff'), url('../fonts/AbrahamLincoln.ttf')
+    format('truetype'), url('../fonts/AbrahamLincoln.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
+/*@font-face {*/
+/*    font-family: Roboto;*/
+/*    src: url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");*/
+/*}*/
 .learnAbout {
     z-index: 5;
     top: 73%;
@@ -78,11 +89,11 @@
     height:100%;
     position: absolute;
     color: white;
-    font-family: Roboto;
+    font-family: 'Roboto',  sans-serif;
     font-style: italic;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 36px;
     text-align: center;
 }
 
