@@ -8,6 +8,7 @@
     height: 20%;
     position: relative;
     width: 100%;
+
 }
 .headerPicture {
     position: absolute;
@@ -22,6 +23,8 @@
     display: inline-block;
     background-position: 50%;
     margin: auto;
+    box-shadow:  0 0 48px 48px  #151515 inset;
+
 }
 .middle {
     position: relative;
@@ -37,23 +40,14 @@
     position: absolute;
     background-size: cover;
     background-position: right bottom;
+    box-shadow:  0 0 48px 48px  #151515 inset;
 }
 .bottom {
     height: 20%;
     position: relative;
-    background-color: #212020;
-}
-.bottomPicture:before {
-    display: inline-block;
-    content:url("../pictures/lines 1 (1).png") ;
- }
-
-.bottomPicture {
-    position: absolute;
-    background: url("../pictures/lines 1 (1).png");
-    background-size: cover;
-    height: 100%;
+    background: url("../pictures/lines 1 (1).png")  #151515;
+    background-blend-mode: overlay;
+    background-size: contain;
     width: 100%;
-
-
+    box-shadow:  0 0 48px 48px  #151515 inset;
 }
