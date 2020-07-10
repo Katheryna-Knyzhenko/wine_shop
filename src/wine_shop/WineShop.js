@@ -10,6 +10,9 @@ function WineShop() {
         <div className='middle'>
         <div className='middlePicture'/>
     </div>
+        <div className='bottom'>
+            <div className='bottomPicture'/>
+        </div>
     </div>
   );
 }
