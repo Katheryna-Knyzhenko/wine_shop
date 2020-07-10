@@ -25,9 +25,23 @@
     top: 30%;
     left: 10%;
 }
-.grape4 {
-    background-color: fuchsia;
-    z-index: 1;
+.grape1Img {
+    position: absolute;
+    z-index: 4;
+    top:80%;
+    left:0;
+}
+.grape2Img {
+    position: absolute;
+    z-index: 4;
+    top:20%;
+    right:0;
+}
+.grape3Img {
+    position: absolute;
+    z-index: 4;
+    top:75%;
+    right:20%;
 }
 .headerPicture {
     position: relative;
