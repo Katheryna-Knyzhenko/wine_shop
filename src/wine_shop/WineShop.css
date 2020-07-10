@@ -51,8 +51,35 @@
     position: absolute;
     display: block;
 }
-.bottleImg {
-
+.exploreText {
+    z-index: 5;
+    top: 58%;
+    left: 25%;
+    width: 55%;
+    height:100%;
+    position: absolute;
+    display: block;
+    font-family: Abraham Lincoln;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 90px;
+    line-height: 90px;
+    color: white;
+}
+.learnAbout {
+    z-index: 5;
+    top: 73%;
+    left: 25%;
+    width: 55%;
+    height:100%;
+    position: absolute;
+    color: white;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
 }
 .middle {
     position: relative;
