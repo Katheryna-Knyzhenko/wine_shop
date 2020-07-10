@@ -3,15 +3,17 @@
     width: 1920px;
     height: 3603px;
     position: relative;
+    z-index: 0;
 }
 .head {
     height: 20%;
     position: relative;
     width: 100%;
-
+    display: block;
+    z-index: 1;
 }
 .headerPicture {
-    position: absolute;
+    position: relative;
     top: 0;
    opacity: 0.7;
     background: black url("../pictures/201905_or 1.jpg") center center;
@@ -20,10 +22,36 @@
     height: 100%;
     background-size: cover;
     overflow: hidden;
-    display: inline-block;
+    display: block;
     background-position: 50%;
     margin: auto;
     box-shadow:  0 0 48px 48px  #151515 inset;
+    z-index: 2;
+}
+
+.grape {
+    z-index: 4;
+    top: 18%;
+    left: 35%;
+    width: 25%;
+    height:100%;
+    position: absolute;
+    display: block;
+}
+.grapeImg {
+    width: 100%;
+    height: 100%;
+}
+.bottle {
+    z-index: 5;
+    top: 50%;
+    left: 42%;
+    width: 25%;
+    height:100%;
+    position: absolute;
+    display: block;
+}
+.bottleImg {
 
 }
 .middle {
