@@ -3,7 +3,7 @@ import './PopUp.css';
 
 function PopUp () {
     return (
-        <div className='wrap'>
+        <div className='popup'>
             popup
         </div>
     )

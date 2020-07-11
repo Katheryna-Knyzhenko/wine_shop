@@ -5,34 +5,33 @@ import Menu from "../menu/Menu";
 
 
 class WineShop extends Component {
-    constructor() {
-        super();
-        this.state = {isPopUpShown: false, isMenuShown: false}
-
+    constructor(props) {
+        super(props);
+        this.state = {isPopUpShown: false, isMenuShown: false};
     }
 
 
-    showPopUp () {
-        this.setState({isPopUpShown: !this.state.isPopUpShown})
-    }
-    showMenu () {
-        this.setState({isMenuShown: !this.state.isMenuShown})
-    }
     render() {
-
-
+        const showMenu = () => {
+            console.log('isMenuShown', this.state.isMenuShown);
+            this.setState({isMenuShown: !this.state.isMenuShown})
+        };
+        const showPopUp = () => {
+            this.setState({isPopUpShown: !this.state.isPopUpShown})
+        };
         return (
             <div className="wrapper">
-                {this.state.isPopUpShown} && <PopUp/>
-                {this.state.isMenuShown} && <Menu/>
+                {this.state.isPopUpShown && <PopUp/>}
+                {this.state.isMenuShown && <Menu/>}
                 <div className='head'>
                     <div className='menu'>
                         <div className='item'>About us</div>
                         <div className='item'>History</div>
-                        <div className='item call'>Call me plz</div>
-                        <div className='item phone'><span onClick={this.showPopUp}>+35 987 654 32 10</span></div>
+                        <div className='item call' onClick={showPopUp}>Call me plz</div>
+                        <div className='item phone'><span>+35 987 654 32 10</span></div>
                     </div>
-                    <div className='burger' onClick={this.showMenu}><img src={require('../pictures/Vector.png')} className='burgerLines'/> <img
+                    <div onClick={showMenu} className='burger'><img src={require('../pictures/Vector.png')}
+                                                                    className='burgerLines'/> <img
                         src={require('../pictures/Ellipse 1.png')} className='burgerRound'/></div>
                     <div className='headerPicture'>
                     </div>
@@ -103,4 +102,5 @@ class WineShop extends Component {
         );
     }
 }
+
 export default WineShop;
