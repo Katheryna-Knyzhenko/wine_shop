@@ -34,6 +34,9 @@
     line-height: 16px;
 
 }
+.call {
+    cursor: pointer;
+}
 .menu span {
     color: #ADC62C;
 }
@@ -46,6 +49,7 @@
     z-index: 4;
     right: 5.1%;
     top: 6.8%;
+    cursor: pointer;
 }
 .burgerLines {
     position: absolute;
@@ -97,7 +101,7 @@
 .grape {
     z-index: 4;
     top: 18%;
-    left: 35%;
+    left: 38%;
     width: 25%;
     height:100%;
     position: absolute;
