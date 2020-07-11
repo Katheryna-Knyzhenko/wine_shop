@@ -56,7 +56,11 @@ function WineShop() {
                     traditional grape varieties.
                 </div>
                 <div><img className='glassLeft'
-                          src={require('../pictures/glass 1.png')}/>
+                                 src={require('../pictures/glass 1.png')}/>
+            </div>
+                <div><img className='recButton'
+                          src={require('../pictures/Rectangle 9.png')}/>
+                    <div className='textLearnMore'>Learn more</div>
                 </div>
                 <div><img className='glassRight'
                           src={require('../pictures/glass 2.png')}/>

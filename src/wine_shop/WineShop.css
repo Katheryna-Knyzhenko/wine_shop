@@ -258,3 +258,18 @@
     width: 100%;
     box-shadow:  0 0 48px 48px  #151515 inset;
 }
+.recButton {
+    position: absolute;
+    width: 172px;
+    height: 77px;
+    display: block;
+    left: 45%;
+    z-index: 4;
+}
+.textLearnMore {
+    color: black;
+    position: absolute;
+    z-index: 6;
+    left: 47.5%;
+    top: 47%
+}

@@ -4,3 +4,71 @@
     background-color: black;
     position: absolute;
 }
+.logo {
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #838383;
+    margin: 4em;
+    text-align: center;
+    top: 30%;
+    position: absolute;
+}
+.agency {
+    top: 50%;
+    position: absolute;
+    color: #838383;
+    right: 2em;
+    margin-right: 2em;
+}
+.agency span {
+    color: #ADC62C;
+}
+
+.form {
+    top: 50%;
+    position: absolute;
+    right: 40%;
+}
+.form span {
+    color: #838383;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin-right: 1em;
+}
+.form input {
+    background-color: #151515;
+    color: #838383;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    border: 1px solid #4E4E4E;
+    box-sizing: border-box;
+    border-radius: 39px;
+    margin-right: 1em;
+    padding: 1em;
+    width: 252px;
+    height: 54px;
+}
+
+.send {
+    position: absolute;
+    width: 144px;
+    height: 54px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #838383;
+    background: #383838;
+    border-radius: 39px;
+}
