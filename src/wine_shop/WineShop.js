@@ -21,7 +21,7 @@ class WineShop extends Component {
         };
         return (
             <div className="wrapper">
-                {this.state.isPopUpShown && <PopUp/>}
+                {this.state.isPopUpShown && <PopUp close = {showPopUp}/>}
                 {this.state.isMenuShown && <Menu openClose = {showMenu}/>}
                 <div className='head'>
                     <div className='menu'>

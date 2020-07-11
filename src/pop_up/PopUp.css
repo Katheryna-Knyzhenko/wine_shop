@@ -4,7 +4,44 @@
     width: 662px;
     height: 522px;
     z-index: 4;
-    left: 0;
-    top: 0;
+    left: 33%;
+    top: 4%;
 
+}
+
+.cross1 {
+    position: absolute;
+    width: 22.63px;
+    height: 22.63px;
+    left: 603px;
+    top: 43px;
+}
+
+.formPop {
+    width: 383px;
+    height: 330px;
+    margin: 0 auto;
+    margin-top: 14%;
+}
+.nameInput {
+    left: 140px;
+    top: 96px;
+}
+
+.telInput, .nameInput {
+    width: 383px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 48.5px;
+    margin-bottom: 1.5em;
+    padding-left: 1em;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+.telInput {
+    left: 140px;
+    top: 174px;
 }
