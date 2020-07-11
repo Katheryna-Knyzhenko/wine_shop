@@ -76,14 +76,97 @@
 .bottle {
     z-index: 5;
     top: 50%;
-    left: 42%;
+    left: 45%;
     width: 25%;
     height:100%;
     position: absolute;
     display: block;
 }
 
-
+.introgrape13 {
+     z-index: 5;
+     position: absolute;
+     display: block;
+     top: 40%;
+     left: 0;
+ }
+.introgrape12 {
+    z-index: 5;
+    position: absolute;
+    display: block;
+    top: 20%;
+    right: 0;
+}
+.singleGrapeMain31 {
+    z-index: 5;
+    position: absolute;
+    display: block;
+    top: 70%;
+    left: 20%;
+}
+.singleGrapeMain1 {
+    z-index: 5;
+    position: absolute;
+    display: block;
+    top: 82%;
+    left: 44%;
+}
+.singleGrapeMain3 {
+    z-index: 5;
+    position: absolute;
+    display: block;
+    top: 40%;
+    right: 30%;
+}
+.ellipse  {
+    z-index: 5;
+    position: absolute;
+    display: block;
+    top: 60%;
+    left: 45%;
+}
+.n1941 {
+    z-index: 5;
+    position: absolute;
+    display: block;
+    top: 64%;
+    left: 49%;
+}
+.leaveBig {
+    z-index: 5;
+    position: absolute;
+    display: block;
+    top: 72%;
+    right: 36%
+}
+.leaveSmaller1 {
+    z-index: 5;
+    position: absolute;
+    display: block;
+    top: 69%;
+    right: 26%
+}
+.leaveSmaller2 {
+    z-index: 5;
+    position: absolute;
+    display: block;
+    top: 54%;
+    right: 55%
+}
+.glassLeft {
+    z-index: 5;
+    position: absolute;
+    display: block;
+    top: 30%;
+    left: 0
+}
+.glassRight {
+    z-index: 5;
+    position: absolute;
+    display: block;
+    top: 18%;
+    right: 0
+}
 .exploreText {
     z-index: 5;
     top: 58%;
@@ -99,6 +182,31 @@
     line-height: 90px;
     color: white;
     text-align: center;
+}
+.region {
+    font-family: Abraham Lincoln;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 86px;
+    line-height: 86px;
+    color: #ADC62C;
+    text-align: center;
+    padding-top: 1em;
+}
+.climate {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
+    width: 876px;
+    height: 102px;
+    margin: 0 auto;
+    padding-top: 2em;
+    font-style: italic;
+    text-align: center;
+
 }
 @font-face {
     font-family: 'Abraham Lincoln';
