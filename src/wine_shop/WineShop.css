@@ -18,7 +18,41 @@
     top:0;
     left: 0;
 }
+.menu {
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    flex-flow: row;
+    color: white;
+    left: 60%;
+    top: 8.5%;
+    margin: 0 -45px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
 
+}
+.menu span {
+    color: #ADC62C;
+}
+.item {
+    margin: 0 45px;
+    display: flex;
+}
+.burgerRound {
+    position: absolute;
+    z-index: 4;
+    right: 5.1%;
+    top: 6.8%;
+}
+.burgerLines {
+    position: absolute;
+    z-index: 6;
+    right: 6%;
+    top: 9%;
+}
 .grape4Img {
     position: absolute;
     z-index: 4;

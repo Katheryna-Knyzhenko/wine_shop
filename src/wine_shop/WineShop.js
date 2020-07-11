@@ -5,6 +5,14 @@ function WineShop() {
     return (
         <div className="wrapper">
             <div className='head'>
+                <div className='menu'>
+                    <div className='item'>About us</div>
+                    <div className='item'>History</div>
+                    <div className='item'>Call me plz</div>
+                    <div className='item phone'><span>+35 987 654 32 10</span></div>
+                </div>
+                <div className='burger'><img src={require('../pictures/Vector.png')} className='burgerLines'/> <img
+                    src={require('../pictures/Ellipse 1.png')} className='burgerRound'/></div>
                 <div className='headerPicture'>
                 </div>
                 <div className='grape'><img className='grapeImg' src={require('../pictures/intro-grape11.png')}
@@ -56,8 +64,8 @@ function WineShop() {
                     traditional grape varieties.
                 </div>
                 <div><img className='glassLeft'
-                                 src={require('../pictures/glass 1.png')}/>
-            </div>
+                          src={require('../pictures/glass 1.png')}/>
+                </div>
                 <div><img className='recButton'
                           src={require('../pictures/Rectangle 9.png')}/>
                     <div className='textLearnMore'>Learn more</div>
