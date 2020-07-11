@@ -22,7 +22,7 @@ class WineShop extends Component {
         return (
             <div className="wrapper">
                 {this.state.isPopUpShown && <PopUp/>}
-                {this.state.isMenuShown && <Menu/>}
+                {this.state.isMenuShown && <Menu openClose = {showMenu}/>}
                 <div className='head'>
                     <div className='menu'>
                         <div className='item'>About us</div>
@@ -66,6 +66,10 @@ class WineShop extends Component {
                         </div>
                         <div><img className='ellipse' src={require('../pictures/Ellipse 2.png')}/>
                             <div><img className='n1941' src={require('../pictures/1901 (1).png')}/></div>
+                        </div>
+                        <div className='midText'>Give the wine lover in your life a gift they will love. Wine trails are
+                            a fun way of exploring the great food and wine venues we have in the city while making great
+                            memories
                         </div>
                         <div><img className='leaveBig'
                                   src={require('../pictures/kisspng-leaf-clip-art-grape-vine-leaf-5a754b8e03a590 3.png')}/>

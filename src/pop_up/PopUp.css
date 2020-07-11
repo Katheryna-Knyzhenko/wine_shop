@@ -1,9 +1,10 @@
 .popup {
-    background-color: yellow;
+    background-color: black;
     position: absolute;
     width: 662px;
     height: 522px;
     z-index: 4;
-    top: 5%;
+    left: 0;
+    top: 0;
 
 }
