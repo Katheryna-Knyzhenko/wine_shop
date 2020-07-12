@@ -8,7 +8,7 @@ function Footer () {
             <div className='form'><span>Follow us:</span>
                 <input value='Name'></input>
                 <input value='Phone'></input>
-                <button className='send'>Send</button>
+                <button className='send'><span>Send</span></button>
         </div>
             <div className='agency'>Development by <span>Mango.agency</span></div>
         </div>

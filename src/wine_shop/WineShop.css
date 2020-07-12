@@ -311,12 +311,13 @@
     border: 1px solid #ADC62C;
     box-sizing: border-box;
     border-radius: 38.5px;
+    cursor: pointer;
 }
 .textLearnMore {
     position: absolute;
     z-index: 6;
-    left: 25%;
-    top: 35%;
+    left: 23%;
+    top: 33%;
     width: 92px;
     height: 30px;
     font-family: Roboto;
@@ -326,6 +327,7 @@
     line-height: 30px;
     text-align: center;
     color: #FFFFFF;
+    cursor: pointer;
 }
 .midText {
     position: absolute;
