@@ -302,16 +302,19 @@
     box-shadow:  0 0 48px 48px  #151515 inset;
 }
 .recButton {
+    background-color: #151515;
     position: absolute;
     width: 172px;
     height: 77px;
-    display: block;
+    display: inline-block;
     left: 45%;
     z-index: 4;
     border: 1px solid #ADC62C;
-    box-sizing: border-box;
     border-radius: 38.5px;
     cursor: default;
+}
+.recButton:focus {
+    outline: none;
 }
 .textLearnMore {
     position: absolute;

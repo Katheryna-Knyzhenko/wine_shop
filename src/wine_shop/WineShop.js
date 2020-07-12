@@ -93,9 +93,9 @@ class WineShop extends Component {
                     <div><img className='glassLeft'
                               src={require('../pictures/glass 1.png')}/>
                     </div>
-                    <div className='recButton'><span className='textLearnMore'>
+                    <button className='recButton'><span className='textLearnMore'>
                   Learn more</span>
-                    </div>
+                    </button>
                     <div><img className='glassRight'
                               src={require('../pictures/glass 2.png')}/>
                     </div>

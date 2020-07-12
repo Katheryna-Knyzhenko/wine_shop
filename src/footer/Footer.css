@@ -78,4 +78,8 @@
     width: 144px;
     height: 54px;
     background: #383838;
+    display: inline-block;
+}
+.send:focus {
+   outline: none;
 }
