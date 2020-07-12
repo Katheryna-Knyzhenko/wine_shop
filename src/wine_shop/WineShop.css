@@ -311,7 +311,7 @@
     border: 1px solid #ADC62C;
     box-sizing: border-box;
     border-radius: 38.5px;
-    cursor: pointer;
+    cursor: default;
 }
 .textLearnMore {
     position: absolute;
@@ -327,7 +327,7 @@
     line-height: 30px;
     text-align: center;
     color: #FFFFFF;
-    cursor: pointer;
+    cursor: default;
 }
 .midText {
     position: absolute;
