@@ -17,6 +17,7 @@
     left: 62px;
     top: 48px;
     z-index: 9;
+    cursor: pointer;
 }
 .logoW {
     position: absolute;

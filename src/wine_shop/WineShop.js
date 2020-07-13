@@ -21,14 +21,14 @@ class WineShop extends Component {
             this.setState({isPopUpShown: !this.state.isPopUpShown})
         };
         
-        const scro = () => {
+        const scroll = () => {
             console.log('1111', window.scrollY);
             window.scrollY === 0 ? this.setState({mainLogo: true}) : this.setState({mainLogo: false})
         };
 
         return (
 
-            <div className="wrapper" onWheel={scro}>
+            <div className="wrapper" onWheel={scroll}>
 
 
                 {this.state.mainLogo ?
