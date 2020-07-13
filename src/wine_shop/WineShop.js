@@ -8,7 +8,7 @@ import $ from "jquery";
 class WineShop extends Component {
     constructor(props) {
         super(props);
-        this.state = {isPopUpShown: false, isMenuShown: false};
+        this.state = {isPopUpShown: false, isMenuShown: false, changeLogo: false};
     }
 
 
@@ -21,21 +21,33 @@ class WineShop extends Component {
         const showPopUp = () => {
             this.setState({isPopUpShown: !this.state.isPopUpShown})
         };
-        $(document).ready(function() {
-            const $img = $('#fullLogoImg');
-            $img.data('../pictures/Winehis..png', $img.attr('src'));
-            $(window).scroll(function() {
-                if ($(window).scrollTop() > 100) {
-                    $('#fullLogoImg').attr({"src": $img});
-                } else {
-                    $img.attr('src', $img.data('../pictures/full logo ver.jpg'));
-                }
-            });
+        const changeLogoImg = () => {
+            this.setState({changeLogo: true})
+        };
+        // $(document).ready(function() {
+        //     const $img = $('#fullLogoImg');
+        //     $img.data('../pictures/Winehis..png', $img.attr('src'));
+        //     $(window).scroll(function() {
+        //         var top = $(this).scrollTop();
+        //         if ($(top).scrollTop() > 10) {
+        //             $('#fullLogoImg').css({"src": '../pictures/Winehis..png'});
+        //         } else {
+        //             $('#fullLogoImg').css({"src": '../pictures/full  logo ver.jpg'});
+        //         }
+        //     });
+        //
+        //
+        // });
+        // if(this.state.changeLogo ===false) {
+        //     <div className='fullLogo'>
+        //         <img id='fullLogoImg' src={require('../pictures/full logo ver.jpg')} alt='logo'/></div> }
+        // else if (this.state.changeLogo) {
+        //     <div className='fullLogo'>
+        //         <img id='fullLogoImg' src={require('../pictures/Winehis..png')} alt='logo'/></div>}
 
+            return (
 
-        });
-        return (
-            <div className="wrapper">
+            <div className="wrapper" onScroll={changeLogoImg}>
                 {this.state.isPopUpShown && <PopUp close = {showPopUp}/>}
                 {this.state.isMenuShown && <Menu openClose = {showMenu}/>}
                 <div className='head'>
@@ -54,7 +66,10 @@ class WineShop extends Component {
                                                 alt='grape'/></div>
                     <div className='bottle'><img src={require('../pictures/bottle (1).png')}
                                                  alt='bottle'/></div>
-                    <div className='fullLogo'><img id='fullLogoImg' src={require('../pictures/full logo ver.jpg')} alt='logo'/></div>
+
+                    <div className='fullLogo'>
+                        <img id='fullLogoImg' src={require('../pictures/full logo ver.jpg')} alt='logo'/></div>
+
                     <div><img className='grape4Img' src={require('../pictures/single-grape-main 4 (1).png')}/></div>
                     <div><img className='grape1Img' src={require('../pictures/single-grape-main 1.png')}/></div>
                     <div><img className='grape2Img' src={require('../pictures/single-grape-main 2 (1).png')}/></div>
