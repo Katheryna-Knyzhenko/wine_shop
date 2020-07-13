@@ -23,6 +23,7 @@
     margin: 0 auto;
     margin-top: 14%;
 }
+
 .nameInput {
     left: 140px;
     top: 96px;
@@ -41,10 +42,12 @@
     font-size: 14px;
     line-height: 16px;
 }
+
 .telInput {
     left: 140px;
     top: 174px;
 }
+
 .userInfo {
     display: flex;
     flex-flow: row;
@@ -56,6 +59,7 @@
     margin: -20px -20px;
 
 }
+
 .ageChoose {
     display: flex;
     width: 60px;
@@ -70,13 +74,14 @@
     margin: 20px;
 
 }
+
 .age20, .age30, .age40 {
 
     position: absolute;
     width: 20px;
 }
 
-.agy  {
+.agy {
     display: flex;
     width: 43px;
     height: 16px;
@@ -96,6 +101,7 @@
     flex-flow: row;
 
 }
+
 .downloadFoto {
     display: flex;
     flex-flow: row;
@@ -107,9 +113,10 @@
     background: #2E2E2E;
     border-radius: 42px;
 }
+
 .downloadFoto > span {
     display: flex;
-position: relative;
+    position: relative;
     width: 74px;
     height: 32px;
     left: 22px;
@@ -121,6 +128,7 @@ position: relative;
     line-height: 16px;
     color: #FFFFFF;
 }
+
 .sendB {
     left: 359px;
     display: flex;
@@ -137,6 +145,7 @@ position: relative;
 
 
 }
+
 .sendT {
     font-family: Roboto;
     font-style: normal;
@@ -153,7 +162,8 @@ position: relative;
     outline: none;
     cursor: pointer;
 }
-.cloudB  {
+
+.cloudB {
     background: url("../pictures/Vector (4).png");
     display: flex;
     position: relative;
