@@ -2,13 +2,12 @@ import React, {Component} from 'react';
 import './WineShop.css';
 import PopUp from "../pop_up/PopUp";
 import Menu from "../menu/Menu";
-import $ from "jquery";
 
 
 class WineShop extends Component {
     constructor(props) {
         super(props);
-        this.state = {isPopUpShown: false, isMenuShown: false, changeLogo: false};
+        this.state = {isPopUpShown: false, isMenuShown: false, mainLogo: true};
     }
 
 
@@ -20,9 +19,6 @@ class WineShop extends Component {
         };
         const showPopUp = () => {
             this.setState({isPopUpShown: !this.state.isPopUpShown})
-        };
-        const changeLogoImg = () => {
-            this.setState({changeLogo: true})
         };
         // $(document).ready(function() {
         //     const $img = $('#fullLogoImg');
@@ -38,18 +34,35 @@ class WineShop extends Component {
         //
         //
         // });
-        // if(this.state.changeLogo ===false) {
+        // if(this.state.mainLogo ===false) {
         //     <div className='fullLogo'>
         //         <img id='fullLogoImg' src={require('../pictures/full logo ver.jpg')} alt='logo'/></div> }
-        // else if (this.state.changeLogo) {
+        // else if (this.state.mainLogo) {
         //     <div className='fullLogo'>
         //         <img id='fullLogoImg' src={require('../pictures/Winehis..png')} alt='logo'/></div>}
 
-            return (
 
-            <div className="wrapper" onScroll={changeLogoImg}>
-                {this.state.isPopUpShown && <PopUp close = {showPopUp}/>}
-                {this.state.isMenuShown && <Menu openClose = {showMenu}/>}
+        //window.addEventListener('scroll', handleScroll);
+
+        const scro = () => {
+            console.log('1111', window.scrollY);
+            window.scrollY === 0 ? this.setState({mainLogo: true}) : this.setState({mainLogo: false})
+        };
+
+        return (
+
+            <div className="wrapper" onWheel={scro}>
+
+
+                {this.state.mainLogo ?
+                    <div className='fullLogoStatic'>
+                        <img id='fullLogoImg' src={require('../pictures/full logo ver.jpg')} alt='logo'/></div> :
+                    <div className='fullLogoMove'>
+                        <img id='fullLogoImg' src={require('../pictures/Winehis..png')} alt='logo'/></div>
+                }
+
+                {this.state.isPopUpShown && <PopUp close={showPopUp}/>}
+                {this.state.isMenuShown && <Menu openClose={showMenu}/>}
                 <div className='head'>
                     <div className='menu'>
                         <div className='item'>About us</div>

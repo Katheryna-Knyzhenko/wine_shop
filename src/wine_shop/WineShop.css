@@ -15,11 +15,27 @@
     display: block;
     z-index: 1;
 }
-.fullLogo {
+.fullLogoStatic {
+
+     z-index: 8;
+     top:0.9%;
+     left: 0.6%;
+     position: absolute;
+ }
+.fullLogoMove {
     position: fixed;
-    z-index: 8;
+    z-index: 10;
     top:0.9%;
     left: 0.6%;
+}
+.fullLogoImg {
+    width: 12.27px;
+    height: 15px;
+    background: #FFFFFF;
+    top:0.9%;
+    left: 0.6%;
+    position: fixed;
+    z-index: 9;
 }
 .menu {
     position: absolute;
