@@ -20,30 +20,7 @@ class WineShop extends Component {
         const showPopUp = () => {
             this.setState({isPopUpShown: !this.state.isPopUpShown})
         };
-        // $(document).ready(function() {
-        //     const $img = $('#fullLogoImg');
-        //     $img.data('../pictures/Winehis..png', $img.attr('src'));
-        //     $(window).scroll(function() {
-        //         var top = $(this).scrollTop();
-        //         if ($(top).scrollTop() > 10) {
-        //             $('#fullLogoImg').css({"src": '../pictures/Winehis..png'});
-        //         } else {
-        //             $('#fullLogoImg').css({"src": '../pictures/full  logo ver.jpg'});
-        //         }
-        //     });
-        //
-        //
-        // });
-        // if(this.state.mainLogo ===false) {
-        //     <div className='fullLogo'>
-        //         <img id='fullLogoImg' src={require('../pictures/full logo ver.jpg')} alt='logo'/></div> }
-        // else if (this.state.mainLogo) {
-        //     <div className='fullLogo'>
-        //         <img id='fullLogoImg' src={require('../pictures/Winehis..png')} alt='logo'/></div>}
-
-
-        //window.addEventListener('scroll', handleScroll);
-
+        
         const scro = () => {
             console.log('1111', window.scrollY);
             window.scrollY === 0 ? this.setState({mainLogo: true}) : this.setState({mainLogo: false})

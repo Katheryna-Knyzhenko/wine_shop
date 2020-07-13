@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap);
 
+body {
+    cursor: url("../pictures/icons8-w-в-круге-24.png"),  auto;
+}
 
 .wrapper {
     background-color: #212020;
@@ -18,7 +21,7 @@
 .fullLogoStatic {
 
      z-index: 8;
-     top:0.9%;
+     top:0;
      left: 0.6%;
      position: absolute;
  }
@@ -53,7 +56,7 @@
     line-height: 16px;
 
 }
-.call {
+ .call {
     cursor: pointer;
 }
 .menu span {
