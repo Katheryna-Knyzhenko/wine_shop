@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './WineShop.css';
 import PopUp from "../pop_up/PopUp";
 import Menu from "../menu/Menu";
+import $ from "jquery";
 
 
 class WineShop extends Component {
@@ -12,6 +13,7 @@ class WineShop extends Component {
 
 
     render() {
+
         const showMenu = () => {
             console.log('isMenuShown', this.state.isMenuShown);
             this.setState({isMenuShown: !this.state.isMenuShown})
@@ -19,6 +21,19 @@ class WineShop extends Component {
         const showPopUp = () => {
             this.setState({isPopUpShown: !this.state.isPopUpShown})
         };
+        $(document).ready(function() {
+            const $img = $('#fullLogoImg');
+            $img.data('../pictures/Winehis..png', $img.attr('src'));
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 100) {
+                    $('#fullLogoImg').attr({"src": $img});
+                } else {
+                    $img.attr('src', $img.data('../pictures/full logo ver.jpg'));
+                }
+            });
+
+
+        });
         return (
             <div className="wrapper">
                 {this.state.isPopUpShown && <PopUp close = {showPopUp}/>}
@@ -39,7 +54,7 @@ class WineShop extends Component {
                                                 alt='grape'/></div>
                     <div className='bottle'><img src={require('../pictures/bottle (1).png')}
                                                  alt='bottle'/></div>
-                    <div className='fullLogo'><img src={require('../pictures/full logo ver.jpg')} alt='logo'/></div>
+                    <div className='fullLogo'><img id='fullLogoImg' src={require('../pictures/full logo ver.jpg')} alt='logo'/></div>
                     <div><img className='grape4Img' src={require('../pictures/single-grape-main 4 (1).png')}/></div>
                     <div><img className='grape1Img' src={require('../pictures/single-grape-main 1.png')}/></div>
                     <div><img className='grape2Img' src={require('../pictures/single-grape-main 2 (1).png')}/></div>
