@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import './WineShop.css';
 import PopUp from "../pop_up/PopUp";
 import Menu from "../menu/Menu";
+import ScrollAnimation from 'react-animate-on-scroll';
+import animateIn from "animate.css/animate.min.css";
+
 
 
 class WineShop extends Component {
@@ -105,15 +108,15 @@ class WineShop extends Component {
                 </div>
                 <div className='bottom'>
                     <div className='region'>About region</div>
-                    <div className='climate'>The climate and diversity of soils in the Stara Zagora region present great
+                    <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut"><div className='climate'>The climate and diversity of soils in the Stara Zagora region present great
                         opportunities for viticulture and winemaking. Our winery benefits from fantastic geography and
                         weather conditions that allow us to grow both exotic international grapes as well as local
                         traditional grape varieties.
-                    </div>
+                    </div></ScrollAnimation>
                     <div><img className='glassLeft'
                               src={require('../pictures/glass 1.png')}/>
                     </div>
-                    <button className='recButton'><span className='textLearnMore'>
+                    <button  className='recButton'><span className='textLearnMore'>
                   Learn more</span>
                     </button>
                     <div><img className='glassRight'

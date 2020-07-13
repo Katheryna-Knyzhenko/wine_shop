@@ -144,13 +144,25 @@ body {
     display: block;
 }
 
-.introgrape13 {
+.introgrape13{
      z-index: 5;
      position: absolute;
      display: block;
      top: 40%;
      left: 0;
+    animation: introGrape13Animation 8s infinite ease-in;
  }
+
+@keyframes introGrape13Animation {
+    from {
+        top: 40%;
+        left: 0;
+    }
+    to {
+        top: 80%;
+        left: 0;
+    }
+}
 .introgrape12 {
     z-index: 5;
     position: absolute;
