@@ -17,7 +17,7 @@ class WineShop extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {isPopUpShown: false, isMenuShown: false, mainLogo: true};
+        this.state = {isPopUpShown: false, isMenuShown: false, mainLogo: true, isGrapeMove: false};
     }
 
 
@@ -27,30 +27,42 @@ class WineShop extends Component {
             once: true,
             mirror: true,
         });
+
         $(document).ready(function () {
 
-                document.onmousemove = function () {
-                    var introGrape1 = document.querySelector('#grapeImg');
-                    introGrape1.classList.add('grapeAnimate');
-                    var grape4 = document.querySelector('#grape4Img');
-                    grape4.classList.add(('grape4Animate'));
-                    var grape3 = document.querySelector('#grape3Img');
-                    grape3.classList.add(('grape3Animate'));
-                    var grape2 = document.querySelector('#grape2Img');
-                    grape2.classList.add(('grape2Animate'));
-                    var grape1 = document.querySelector('#grape1Img');
-                    grape1.classList.add(('grape1Animate'));
-                    var introGrape13 = document.querySelector('#introgrape13');
-                    introGrape13.classList.add(('introGrape13'));
-                    var introGrape12 = document.querySelector('#introgrape12');
-                    introGrape12.classList.add(('introGrape12'));
-                    var singleGrapeMain31 = document.querySelector('#singleGrapeMain31');
-                    singleGrapeMain31.classList.add(('singleGrapeMain31'));
-                    var singleGrapeMain1 = document.querySelector('#singleGrapeMain1');
-                    singleGrapeMain1.classList.add(('singleGrapeMain1'));
-                    var singleGrapeMain3 = document.querySelector('#singleGrapeMain3');
-                    singleGrapeMain3.classList.add(('singleGrapeMain3'));
-                }});
+            window.captureEvents(Event.MOUSEMOVE);
+                document.onmousemove = function b(event ) {
+                    var cursorX = event.offsetX;
+                   var  cursorY = event.offsetY;
+                    event = event || window.event;
+
+                        var introGrape1 = document.querySelector('#grapeImg');
+                        introGrape1.classList.add('grapeAnimate');
+
+                        var grape4 = document.querySelector('#grape4Img');
+                        grape4.classList.add(('grape4Animate'));
+                        var grape3 = document.querySelector('#grape3Img');
+                        grape3.classList.add(('grape3Animate'));
+                        var grape2 = document.querySelector('#grape2Img');
+                        grape2.classList.add(('grape2Animate'));
+                        var grape1 = document.querySelector('#grape1Img');
+                        grape1.classList.add(('grape1Animate'));
+                        var introGrape13 = document.querySelector('#introgrape13');
+                        introGrape13.classList.add(('introGrape13'));
+                        var introGrape12 = document.querySelector('#introgrape12');
+                        introGrape12.classList.add(('introGrape12'));
+                        var singleGrapeMain31 = document.querySelector('#singleGrapeMain31');
+                        singleGrapeMain31.classList.add(('singleGrapeMain31'));
+                        var singleGrapeMain1 = document.querySelector('#singleGrapeMain1');
+                        singleGrapeMain1.classList.add(('singleGrapeMain1'));
+                        var singleGrapeMain3 = document.querySelector('#singleGrapeMain3');
+                        singleGrapeMain3.classList.add(('singleGrapeMain3'));
+
+
+            }
+
+
+        })
 
         const showMenu = () => {
             console.log('isMenuShown', this.state.isMenuShown);

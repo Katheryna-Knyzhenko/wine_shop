@@ -150,37 +150,37 @@ body {
      display: block;
      top: 40%;
      left: 0;
-    animation: introGrape13Animation 8s infinite alternate ease-in;
+    animation: introGrape13Animation 8s 1 reverse ease-in;
  }
 .grapeAnimate {
-    animation: animateGrape 8s infinite  ease-in;
+    animation: animateGrape 8s 1  ease-in;
 }
 .grape4Animate {
-    animation: animateGrape4 11s infinite  ease-out;
+    animation: animateGrape4 11s 1  ease-out;
 }
 .grape3Animate {
-    animation: animateGrape3 7s infinite  ease-out;
+    animation: animateGrape3 7s 1  ease-out;
 }
 .grape2Animate {
-    animation: animateGrape2 5s infinite  ease-in-out;
+    animation: animateGrape2 5s 1  ease-in-out;
 }
 .grape1Animate {
-    animation: animateGrape1 7s infinite  ease-in;
+    animation: animateGrape1 7s 1  ease-in;
 }
 .introGrape13 {
-    animation: introG13 10s infinite  ease-out;
+    animation: introG13 10s 1  ease-out;
 }
 .introGrape12 {
-    animation: introG12 13s infinite  ease-in-out;
+    animation: introG12 13s 1  ease-in-out;
 }
 .singleGrapeMain31 {
-    animation: singleG31 5s infinite  ease-out;
+    animation: singleG31 5s 1 ease-out;
 }
 .singleGrapeMain1 {
-    animation: singleG1 7s infinite  ease-in;
+    animation: singleG1 7s 1 ease-in;
 }
 .singleGrapeMain3 {
-    animation: singleG3 4s infinite  ease-in-out;
+    animation: singleG3 4s 1  ease-in-out;
 }
 
 @keyframes singleG31 {
@@ -318,26 +318,49 @@ body {
     left: 49%;
 }
 .leaveBig {
-    z-index: 5;
+    z-index: 7;
     position: absolute;
     display: block;
     top: 72%;
-    right: 36%
+    right: 36%;
+    animation: spinLeaveBig linear 4s infinite;
+    transform-origin: -10px -20px;
+    transform-style: preserve-3d;
+
+}
+@keyframes spinLeaveBig {
+    100% {transform:rotate(360deg)}
+}
+@keyframes spinLeaveS1 {
+    100% {transform:rotate(360deg)}
+}
+@keyframes spinLeaveS2 {
+    100% {transform:rotate(360deg)}
 }
 .leaveSmaller1 {
     z-index: 5;
     position: absolute;
     display: block;
     top: 69%;
-    right: 26%
+    right: 26%;
+    animation: spinLeaveS1 linear 4s infinite;
+    transform-origin: -10px -20px;
+    transform-style: preserve-3d;
+
+
 }
 .leaveSmaller2 {
     z-index: 5;
     position: absolute;
     display: block;
     top: 54%;
-    right: 55%
+    right: 55%;
+    animation: spinLeaveS2 linear 4s infinite;
+    transform-origin: -70px -10px;
+    transform-style: preserve-3d;
+
 }
+
 .glassLeft {
     z-index: 5;
     position: absolute;
