@@ -44,7 +44,14 @@ class WineShop extends Component {
                     introGrape13.classList.add(('introGrape13'));
                     var introGrape12 = document.querySelector('#introgrape12');
                     introGrape12.classList.add(('introGrape12'));
+                    var singleGrapeMain31 = document.querySelector('#singleGrapeMain31');
+                    singleGrapeMain31.classList.add(('singleGrapeMain31'));
+                    var singleGrapeMain1 = document.querySelector('#singleGrapeMain1');
+                    singleGrapeMain1.classList.add(('singleGrapeMain1'));
+                    var singleGrapeMain3 = document.querySelector('#singleGrapeMain3');
+                    singleGrapeMain3.classList.add(('singleGrapeMain3'));
                 }});
+
         const showMenu = () => {
             console.log('isMenuShown', this.state.isMenuShown);
             this.setState({isMenuShown: !this.state.isMenuShown})

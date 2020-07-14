@@ -173,6 +173,42 @@ body {
 .introGrape12 {
     animation: introG12 13s infinite  ease-in-out;
 }
+.singleGrapeMain31 {
+    animation: singleG31 5s infinite  ease-out;
+}
+.singleGrapeMain1 {
+    animation: singleG1 7s infinite  ease-in;
+}
+.singleGrapeMain3 {
+    animation: singleG3 4s infinite  ease-in-out;
+}
+
+@keyframes singleG31 {
+    from {
+        top: 70%;
+
+    }
+    to {
+        top: 180%;
+    }}
+@keyframes singleG1 {
+    from {
+        top: 82%;
+
+    }
+    to {
+        top: 180%;
+    }}
+@keyframes singleG3 {
+    from {
+        top: 40%;
+
+    }
+    to {
+        top: 180%;
+    }}
+
+
 @keyframes introG13 {
     from {
         top: 40%;
