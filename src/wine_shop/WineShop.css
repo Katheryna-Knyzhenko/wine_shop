@@ -152,7 +152,17 @@ body {
      left: 0;
     animation: introGrape13Animation 8s infinite ease-in;
  }
+.bottleAnimate {
+    animation: animateBottle 8s infinite ease-in;
+}
+@keyframes animateBottle {
+    from {
+        top: 50%;
 
+    }
+    to {
+        top: 140%;
+}}
 @keyframes introGrape13Animation {
     from {
         top: 40%;
@@ -377,4 +387,15 @@ body {
     color: #FFFFFF;
     text-align: center;
     z-index: 6;
+}
+[data-aos="reveal-right"] {
+    transform: scaleX(1);
+    transform-origin: 100% 0;
+    transition-property: transform;
+    transition-delay: 0.5s;
+}
+
+[data-aos="reveal-right"].aos-animate {
+    transform: scaleX(0);
+    animation-duration: 3s;
 }
