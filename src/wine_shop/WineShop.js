@@ -28,11 +28,14 @@ class WineShop extends Component {
             mirror: true,
         });
         $(document).ready(function () {
-        document.onmousemove = function () {
-            var introGrape1 = document.querySelector('#bot');
-            introGrape1.classList.add('bottleAnimate');
-        }
-    })
+
+                if (window.scrollY !== 0) {
+                    var introGrape1 = document.querySelector('#grapeImg');
+                    introGrape1.classList.add('grapeAnimate');
+                } else {
+                    document.querySelector('#grapeImg').classList.remove('grapeAnimate')
+                }
+            })
         const showMenu = () => {
             console.log('isMenuShown', this.state.isMenuShown);
             this.setState({isMenuShown: !this.state.isMenuShown})
@@ -73,7 +76,7 @@ class WineShop extends Component {
                         src={require('../pictures/Ellipse 1.png')} className='burgerRound'/></div>
                     <div className='headerPicture'>
                     </div>
-                    <div className='grape' ><img  className= 'grapeImg' src={require('../pictures/intro-grape11.png')}
+                    <div className='grape' id='grapeImg'><img   className= 'grapeImg' src={require('../pictures/intro-grape11.png')}
                                                 alt='grape'/></div>
 
 

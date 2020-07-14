@@ -150,18 +150,18 @@ body {
      display: block;
      top: 40%;
      left: 0;
-    animation: introGrape13Animation 8s infinite ease-in;
+    animation: introGrape13Animation 8s infinite alternate ease-in;
  }
-.bottleAnimate {
-    animation: animateBottle 8s infinite ease-in;
+.grapeAnimate {
+    animation: animateGrape 10s infinite alternate ease-in;
 }
-@keyframes animateBottle {
+@keyframes animateGrape {
     from {
-        top: 50%;
+        top: 15%;
 
     }
     to {
-        top: 140%;
+        top: 180%;
 }}
 @keyframes introGrape13Animation {
     from {
