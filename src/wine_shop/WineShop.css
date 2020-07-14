@@ -317,45 +317,57 @@ body {
     top: 64%;
     left: 49%;
 }
-.leaveBig {
+.leafBig {
     z-index: 7;
     position: absolute;
     display: block;
     top: 72%;
     right: 36%;
-    animation: spinLeaveBig linear 4s infinite;
-    transform-origin: -10px -20px;
+    animation: spinLeafBig linear 4s infinite;
+transform-origin: -10px -20px;
     transform-style: preserve-3d;
 
 }
-@keyframes spinLeaveBig {
+@keyframes spinLeafBig {
+    100% {transform:rotate(360deg)}
+    /*0%   { transform: translate(0, 0); }*/
+    /*25%  { transform: translate(80px, 0); }*/
+    /*50%  { transform: translate(140px, 80px); }*/
+    /*75%  { transform: translate(0, 80px); }*/
+    /*100% { transform: translate(0, 0); }*/
+}
+@keyframes spinLeafS1 {
+    from {
+        transform:  rotate(0deg) translateY(-10em)
+        rotate(0deg) rotate(10deg)
+    }
+    to {
+        transform:  rotate(360deg) translateY(-15em)
+        rotate(360deg)
+    }
+}
+@keyframes spinLeafS2 {
     100% {transform:rotate(360deg)}
 }
-@keyframes spinLeaveS1 {
-    100% {transform:rotate(360deg)}
-}
-@keyframes spinLeaveS2 {
-    100% {transform:rotate(360deg)}
-}
-.leaveSmaller1 {
+.leafSmaller1 {
     z-index: 5;
     position: absolute;
     display: block;
     top: 69%;
     right: 26%;
-    animation: spinLeaveS1 linear 4s infinite;
+    animation: spinLeafS1 linear 6s infinite;
     transform-origin: -10px -20px;
     transform-style: preserve-3d;
 
 
 }
-.leaveSmaller2 {
+.leafSmaller2 {
     z-index: 5;
     position: absolute;
     display: block;
     top: 54%;
     right: 55%;
-    animation: spinLeaveS2 linear 4s infinite;
+    animation: spinLeafS2 linear 4s infinite;
     transform-origin: -70px -10px;
     transform-style: preserve-3d;
 

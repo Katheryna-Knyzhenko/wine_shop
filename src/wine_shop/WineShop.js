@@ -146,13 +146,13 @@ class WineShop extends Component {
                             a fun way of exploring the great food and wine venues we have in the city while making great
                             memories
                         </div>
-                        <div><img id = 'leaveBig' className='leaveBig'
+                        <div><img id = 'leafBig' className='leafBig'
                                   src={require('../pictures/kisspng-leaf-clip-art-grape-vine-leaf-5a754b8e03a590 3.png')}/>
                         </div>
-                        <div><img className='leaveSmaller1' id = 'leaveSmaller1'
+                        <div><img className='leafSmaller1' id = 'leafSmaller1'
                                   src={require('../pictures/kisspng-leaf-clip-art-grape-vine-leaf-5a754b8e03a590 2.png')}/>
                         </div>
-                        <div><img className='leaveSmaller2' id = 'leaveSmaller2'
+                        <div><img className='leafSmaller2' id = 'leafSmaller2'
                                   src={require('../pictures/kisspng-leaf-clip-art-grape-vine-leaf-5a754b8e03a590 1.png')}/>
                         </div>
 
