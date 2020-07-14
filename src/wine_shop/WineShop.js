@@ -32,7 +32,15 @@ class WineShop extends Component {
                 document.onmousemove = function () {
                     var introGrape1 = document.querySelector('#grapeImg');
                     introGrape1.classList.add('grapeAnimate');
-                }})
+                    var grape4 = document.querySelector('#grape4Img');
+                    grape4.classList.add(('grape4Animate'));
+                    var grape3 = document.querySelector('#grape3Img');
+                    grape3.classList.add(('grape3Animate'));
+                    var grape2 = document.querySelector('#grape2Img');
+                    grape2.classList.add(('grape2Animate'));
+                    var grape1 = document.querySelector('#grape1Img');
+                    grape1.classList.add(('grape1Animate'));
+                }});
         const showMenu = () => {
             console.log('isMenuShown', this.state.isMenuShown);
             this.setState({isMenuShown: !this.state.isMenuShown})

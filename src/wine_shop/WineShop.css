@@ -153,8 +153,52 @@ body {
     animation: introGrape13Animation 8s infinite alternate ease-in;
  }
 .grapeAnimate {
-    animation: animateGrape 6s infinite  ease-in;
+    animation: animateGrape 8s infinite  ease-in;
 }
+.grape4Animate {
+    animation: animateGrape4 11s infinite  ease-out;
+}
+.grape3Animate {
+    animation: animateGrape3 7s infinite  ease-out;
+}
+.grape2Animate {
+    animation: animateGrape2 5s infinite  ease-in-out;
+}
+.grape1Animate {
+    animation: animateGrape1 7s infinite  ease-in;
+}
+@keyframes animateGrape1 {
+    from {
+        top: 80%;
+
+    }
+    to {
+        top: 180%;
+    }}
+@keyframes animateGrape2 {
+    from {
+        top: 20%;
+
+    }
+    to {
+        top: 180%;
+    }}
+@keyframes animateGrape4 {
+    from {
+        top: 30%;
+
+    }
+    to {
+        top: 180%;
+    }}
+@keyframes animateGrape3 {
+    from {
+        top: 75%;
+
+    }
+    to {
+        top: 180%;
+    }}
 @keyframes animateGrape {
     from {
         top: 15%;
