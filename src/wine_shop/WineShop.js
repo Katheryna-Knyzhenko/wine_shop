@@ -29,13 +29,10 @@ class WineShop extends Component {
         });
         $(document).ready(function () {
 
-                if (window.scrollY !== 0) {
+                document.onmousemove = function () {
                     var introGrape1 = document.querySelector('#grapeImg');
                     introGrape1.classList.add('grapeAnimate');
-                } else {
-                    document.querySelector('#grapeImg').classList.remove('grapeAnimate')
-                }
-            })
+                }})
         const showMenu = () => {
             console.log('isMenuShown', this.state.isMenuShown);
             this.setState({isMenuShown: !this.state.isMenuShown})
