@@ -167,6 +167,28 @@ body {
 .grape1Animate {
     animation: animateGrape1 7s infinite  ease-in;
 }
+.introGrape13 {
+    animation: introG13 10s infinite  ease-out;
+}
+.introGrape12 {
+    animation: introG12 13s infinite  ease-in-out;
+}
+@keyframes introG13 {
+    from {
+        top: 40%;
+
+    }
+    to {
+        top: 180%;
+    }}
+@keyframes introG12 {
+    from {
+        top: 20%;
+
+    }
+    to {
+        top: 180%;
+    }}
 @keyframes animateGrape1 {
     from {
         top: 80%;

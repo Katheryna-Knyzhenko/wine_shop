@@ -40,6 +40,10 @@ class WineShop extends Component {
                     grape2.classList.add(('grape2Animate'));
                     var grape1 = document.querySelector('#grape1Img');
                     grape1.classList.add(('grape1Animate'));
+                    var introGrape13 = document.querySelector('#introgrape13');
+                    introGrape13.classList.add(('introGrape13'));
+                    var introGrape12 = document.querySelector('#introgrape12');
+                    introGrape12.classList.add(('introGrape12'));
                 }});
         const showMenu = () => {
             console.log('isMenuShown', this.state.isMenuShown);
