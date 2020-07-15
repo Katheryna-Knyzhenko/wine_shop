@@ -199,7 +199,7 @@ const scaleLandscape = () => {
                             className='ellipse' src={require('../pictures/Ellipse 2.png')}/>
                             <div><img className='n1941' src={require('../pictures/1901 (1).png')}/></div>
                         </div>
-                        <div data-aos='fade-down' data-aos-duration='400' className='midText'>Give the wine lover in
+                        <div  className='midText'>Give the wine lover in
                             your life a gift they will love. <a className='linkWine'
                                                                 href='https://snipp.ru/jquery/cursor-coords'>Wine
                                 trails</a> are
