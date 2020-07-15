@@ -6,6 +6,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import animateIn from "animate.css/animate.min.css";
 import AOS from 'aos';
 import $ from 'jquery';
+import {Link} from "react-router-dom";
 
 
 
@@ -111,9 +112,7 @@ class WineShop extends Component {
         };
         
         const scroll = () => {
-            console.log('1111', window.scrollY);
             window.scrollY === 0 ? this.setState({mainLogo: true}) : this.setState({mainLogo: false});
-
         };
 
         return (
@@ -179,7 +178,7 @@ class WineShop extends Component {
                         <div><img src={require('../pictures/Ellipse 4.png')}className='greenCircle'></img><img className='ellipse' src={require('../pictures/Ellipse 2.png')}/>
                             <div><img className='n1941' src={require('../pictures/1901 (1).png')}/></div>
                         </div>
-                        <div data-aos = 'fade-down' data-aos-duration = '400' className='midText'>Give the wine lover in your life a gift they will love. Wine trails are
+                        <div data-aos = 'fade-down' data-aos-duration = '400' className='midText'>Give the wine lover in your life a gift they will love. <a className='linkWine' href='https://snipp.ru/jquery/cursor-coords'>Wine trails</a> are
                             a fun way of exploring the great food and wine venues we have in the city while making great
                             memories
                         </div>

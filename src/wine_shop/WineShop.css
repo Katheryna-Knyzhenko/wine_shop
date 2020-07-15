@@ -332,7 +332,15 @@ body {
     height: 579px;
     top: 54%;
     left: 38%;
-
+    animation: spinGreenCircle 5s infinite ease;
+}
+@keyframes spinGreenCircle {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
 .ellipse  {
     z-index: 5;
@@ -355,19 +363,17 @@ body {
     top: 72%;
     right: 36%;
 transform-origin: -38% -38%;
-    transform-style: preserve-3d;
+
 
 }
 .leafBigA {
     animation: spinLeafBig linear 4s infinite;
+    transform-origin: -5% -38%;
 }
 @keyframes spinLeafBig {
-    100% {transform:rotate(360deg)}
-    /*0%   { transform: translate(0, 0); }*/
-    /*25%  { transform: translate(80px, 0); }*/
-    /*50%  { transform: translate(140px, 80px); }*/
-    /*75%  { transform: translate(0, 80px); }*/
-    /*100% { transform: translate(0, 0); }*/
+    0% {transform: translate(-130px -130px) rotate(180deg)}
+    100% {transform:  rotate(360deg)}
+
 }
 @keyframes spinLeafS1 {
     from {
@@ -412,8 +418,11 @@ transform-origin: -38% -38%;
     transform-origin: 120% bottom;
 
 }
+@keyframes circle {
+    to { transform: rotate(1turn); }
+}
 .leafSmaller2A {
-    animation: spinLeafS2 linear 4s infinite;
+    animation: circle linear 4s infinite;
 }
 .glassLeft {
     z-index: 5;
@@ -565,7 +574,7 @@ transform-origin: -38% -38%;
     line-height: 30px;
     color: #FFFFFF;
     text-align: center;
-    z-index: 6;
+    z-index: 9;
 }
 [data-aos="reveal-right"] {
     transform: scaleX(1);
@@ -608,4 +617,12 @@ transform-origin: -38% -38%;
         0 -10px 100px #ADC62C;
 
     }
+}
+.linkWine {
+    color: #ADC62C;
+    display:inline-block;
+
+}
+.linkWine:hover {
+    cursor: default;
 }
