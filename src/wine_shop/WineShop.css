@@ -324,6 +324,16 @@ body {
     top: 40%;
     right: 30%;
 }
+.greenCircle {
+    z-index: 8;
+    position: absolute;
+    display: block;
+    width: 579px;
+    height: 579px;
+    top: 54%;
+    left: 38%;
+
+}
 .ellipse  {
     z-index: 5;
     position: absolute;

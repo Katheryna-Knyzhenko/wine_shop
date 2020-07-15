@@ -53,6 +53,7 @@ class WineShop extends Component {
             // });
                 var wrap = document.querySelector('#wrapper');
                 wrap.addEventListener('mousemove', function (event ) {
+                    event.preventDefault();
                     var cursorX = event.pageX - $(this).offset().left;
                     var cursorY = event.pageY - $(this).offset().top;
                     var lastX = cursorX;
@@ -175,7 +176,7 @@ class WineShop extends Component {
                         </div>
                         <div><img className='singleGrapeMain3' id = 'singleGrapeMain3' src={require('../pictures/single-grape-main 3.png')}/>
                         </div>
-                        <div><img className='ellipse' src={require('../pictures/Ellipse 2.png')}/>
+                        <div><img src={require('../pictures/Ellipse 4.png')}className='greenCircle'></img><img className='ellipse' src={require('../pictures/Ellipse 2.png')}/>
                             <div><img className='n1941' src={require('../pictures/1901 (1).png')}/></div>
                         </div>
                         <div data-aos = 'fade-down' data-aos-duration = '400' className='midText'>Give the wine lover in your life a gift they will love. Wine trails are
