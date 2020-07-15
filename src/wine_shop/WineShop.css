@@ -323,10 +323,12 @@ body {
     display: block;
     top: 72%;
     right: 36%;
-    animation: spinLeafBig linear 4s infinite;
 transform-origin: -10px -20px;
     transform-style: preserve-3d;
 
+}
+.leafBigA {
+    animation: spinLeafBig linear 4s infinite;
 }
 @keyframes spinLeafBig {
     100% {transform:rotate(360deg)}
@@ -355,24 +357,25 @@ transform-origin: -10px -20px;
     display: block;
     top: 69%;
     right: 26%;
-    animation: spinLeafS1 linear 6s infinite;
     transform-origin: -10px -20px;
     transform-style: preserve-3d;
-
-
 }
+.leafSmaller1A {
+    animation: spinLeafS1 linear 6s infinite;
+}
+
 .leafSmaller2 {
     z-index: 5;
     position: absolute;
     display: block;
     top: 54%;
     right: 55%;
-    animation: spinLeafS2 linear 4s infinite;
     transform-origin: -70px -10px;
     transform-style: preserve-3d;
-
 }
-
+.leafSmaller2A {
+    animation: spinLeafS2 linear 4s infinite;
+}
 .glassLeft {
     z-index: 5;
     position: absolute;

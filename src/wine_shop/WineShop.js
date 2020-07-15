@@ -27,12 +27,13 @@ class WineShop extends Component {
             once: true,
             mirror: true,
         });
-
+        var cursorX = 0;
+        var cursorX = 0;
         $(document).ready(function () {
                 var wrap = document.querySelector('#wrapper');
                 wrap.addEventListener('mousemove', function (event ) {
-                    var cursorX = event.offsetX;
-                    var cursorY = event.offsetY;
+                    var cursorX = event.pageX - $(this).offset().left;
+                    var cursorY = event.pageY - $(this).offset().top;
                     var lastX = cursorX;
 
 
@@ -62,6 +63,12 @@ class WineShop extends Component {
                             singleGrapeMain1.classList.add(('singleGrapeMain1'));
                             var singleGrapeMain3 = document.querySelector('#singleGrapeMain3');
                             singleGrapeMain3.classList.add(('singleGrapeMain3'));
+                            var leafBig = document.querySelector('#leafBig');
+                            leafBig.classList.add(('leafBigA'));
+                            var leafSmaller1 = document.querySelector('#leafSmaller1');
+                            leafSmaller1.classList.add(('leafSmaller1A'));
+                            var leafSmaller2 = document.querySelector('#leafSmaller2');
+                            leafSmaller2.classList.add(('leafSmaller2A'));
 
                         } if (cursorX !== lastX) {
                            wrap.attr('animation', 'paused')
