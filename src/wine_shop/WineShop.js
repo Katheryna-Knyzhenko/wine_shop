@@ -7,6 +7,8 @@ import animateIn from "animate.css/animate.min.css";
 import AOS from 'aos';
 import $ from 'jquery';
 
+
+
 AOS.init({
     debounceDelay: 50,
     once: true,
@@ -30,6 +32,25 @@ class WineShop extends Component {
         var cursorX = 0;
         var cursorX = 0;
         $(document).ready(function () {
+
+            // $.scrollify({
+            //     section : ".headerPicture",
+            //     sectionName : "section-name",
+            //     interstitialSection : "",
+            //     easing: "easeOutExpo",
+            //     scrollSpeed: 1100,
+            //     offset : 0,
+            //     scrollbars: true,
+            //     standardScrollElements: "",
+            //     setHeights: true,
+            //     overflowScroll: true,
+            //     updateHash: true,
+            //     touchScroll:true,
+            //
+            // });
+            // $.scrollify({
+            //     section : ".headerPicture",
+            // });
                 var wrap = document.querySelector('#wrapper');
                 wrap.addEventListener('mousemove', function (event ) {
                     var cursorX = event.pageX - $(this).offset().left;
@@ -69,6 +90,8 @@ class WineShop extends Component {
                             leafSmaller1.classList.add(('leafSmaller1A'));
                             var leafSmaller2 = document.querySelector('#leafSmaller2');
                             leafSmaller2.classList.add(('leafSmaller2A'));
+                            var bottleA = document.querySelector('#bot');
+                            bottleA.classList.add(('bottleA'));
 
                         } if (cursorX !== lastX) {
                            wrap.attr('animation', 'paused')
@@ -88,7 +111,7 @@ class WineShop extends Component {
         
         const scroll = () => {
             console.log('1111', window.scrollY);
-            window.scrollY === 0 ? this.setState({mainLogo: true}) : this.setState({mainLogo: false})
+            window.scrollY === 0 ? this.setState({mainLogo: true}) : this.setState({mainLogo: false});
 
         };
 

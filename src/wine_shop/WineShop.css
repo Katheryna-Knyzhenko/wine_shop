@@ -18,6 +18,9 @@ body {
     display: block;
     z-index: 1;
 }
+.headerPicture {
+    scroll-behavior: smooth;
+}
 .fullLogoStatic {
 
      z-index: 8;
@@ -163,10 +166,13 @@ body {
      display: block;
      top: 40%;
      left: 0;
-    animation: introGrape13Animation 8s 1 reverse ease-in;
+    animation: introGrape13Animation 6s 1 reverse ease-in;
  }
 .grapeAnimate {
-    animation: animateGrape 8s 1  ease-in;
+    animation: animateGrape 6s alternate  1 ease;
+}
+.bottleA {
+    animation: botA 3s alternate  1 ease;
 }
 .grape4Animate {
     animation: animateGrape4 11s 1  ease-out;
@@ -271,20 +277,22 @@ body {
         top: 180%;
     }}
 @keyframes animateGrape {
-    from {
-        top: 15%;
-
-    }
-    to {
-        top: 180%;
-}}
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
+}
+@keyframes botA {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
+}
 @keyframes introGrape13Animation {
     from {
         top: 40%;
         left: 0;
     }
     to {
-        top: 80%;
+        top: 0;
         left: 0;
     }
 }
