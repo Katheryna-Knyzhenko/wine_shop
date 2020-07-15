@@ -11,6 +11,7 @@ class Menu extends Component {
 
     render() {
         return (
+            <div className='menuM'>
             <div className='menuPress'>
                 <div className='cross' onClick={this.props.openClose}><img className='vector' src={require('../pictures/Vector (1).png')}/></div>
                 <div className='logoW'><img className='log' src={require('../pictures/full logo ver.jpg')}/></div>
@@ -23,6 +24,7 @@ class Menu extends Component {
                 <div className='fb'>Facebook</div>
                 <div className='insta'>Instagram</div>
                 <div className='ytbe'>YouTube</div>
+            </div>
             </div>
         )
     }

@@ -1,13 +1,17 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap);
 
+.menuM {
+    position: absolute;
+    left: 78%;
+    top: 4%;
+}
 .menuPress {
     position: fixed;
     background-color: black;
     z-index: 8;
     width: 400px;
     height: 1081px;
-    right: 1%;
-    top: 13.8%;
+
 
 }
 .vector {
