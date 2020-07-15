@@ -114,8 +114,7 @@ class WineShop extends Component {
                         <div className='item phone'><span>+35 987 654 32 10</span></div>
                     </div>
                     <div onClick={showMenu} className='burger'><img src={require('../pictures/Vector.png')}
-                                                                    className='burgerLines'/> <img
-                        src={require('../pictures/Ellipse 1.png')} className='burgerRound'/></div>
+                                                                    className='burgerLines'/> <div className='burgerRound'/></div>
                     <div className='headerPicture'>
                     </div>
                     <div className='grape' id='grapeImg'><img   className= 'grapeImg' src={require('../pictures/intro-grape11.png')}
