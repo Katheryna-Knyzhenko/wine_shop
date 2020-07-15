@@ -108,7 +108,7 @@ class WineShop extends Component {
                 {this.state.isMenuShown && <Menu openClose={showMenu}/>}
                 <div className='head'>
                     <div className='menu'>
-                        <div className='item'>About us</div>
+                        <div className='item aboutUsBut'>About us</div>
                         <div className='item'>History</div>
                         <div className='item call'  onClick={showPopUp}>Call me plz</div>
                         <div className='item phone'><span>+35 987 654 32 10</span></div>

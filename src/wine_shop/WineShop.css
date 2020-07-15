@@ -552,3 +552,34 @@ transform-origin: -10px -20px;
     transform: scaleX(0);
     animation-duration: 3s;
 }
+
+.aboutUsBut {
+    cursor: pointer;
+}
+.aboutUsBut:hover {
+    animation: blur .75s ease-out infinite;
+}
+@keyframes blur {
+
+    from {
+        text-shadow:0 0 10px #fff,
+        0 0 10px #fff,
+        0 0 25px #fff,
+        0 0 25px #fff,
+        0 0 25px #fff,
+        0 0 25px #fff,
+        0 0 25px #fff,
+        0 0 25px #fff,
+        0 0 50px #fff,
+        0 0 50px #fff,
+        0 0 50px #ADC62C,
+        0 0 150px #ADC62C,
+        0 10px 100px #ADC62C,
+        0 10px 100px #ADC62C,
+        0 10px 100px #ADC62C,
+        0 10px 100px #ADC62C,
+        0 -10px 100px #ADC62C,
+        0 -10px 100px #ADC62C;
+
+    }
+}
