@@ -431,12 +431,33 @@ transform-origin: -38% -38%;
     top: 30%;
     left: 0
 }
+.glassLA {
+    animation: glassL 4s 2 ease;
+}
+@keyframes glassL {
+    from {
+        top: 30%;
+    }
+    to {
+        top: 80%
+    }
+}
 .glassRight {
     z-index: 5;
     position: absolute;
     display: block;
     top: 18%;
     right: 0
+}
+.glassRA {
+    animation: glassR 7s 2 ease-out;
+}
+@keyframes glassR {
+    from { top: 18%
+    }
+    to {
+        top: 58%
+    }
 }
  @font-face {
     font-family: 'Abraham Lincoln';
