@@ -10,6 +10,7 @@ body {
     height: 3603px;
     position: relative;
     z-index: 0;
+    overflow: hidden;
 }
 .head {
     height: 20%;
@@ -433,6 +434,7 @@ transform-origin: -38% -38%;
 }
 .glassLA {
     animation: glassL 4s 2 ease;
+    overflow: hidden;
 }
 @keyframes glassL {
     from {
@@ -451,6 +453,7 @@ transform-origin: -38% -38%;
 }
 .glassRA {
     animation: glassR 7s 2 ease-out;
+    overflow: hidden;
 }
 @keyframes glassR {
     from { top: 18%
@@ -550,6 +553,10 @@ transform-origin: -38% -38%;
     background-size: contain;
     width: 100%;
     box-shadow:  0 0 48px 48px  #151515 inset;
+}
+.bottomScale {
+    background: url("../pictures/lines 1 (1).png")  #151515;
+    transform: scale(4);
 }
 .recButton {
     background-color: #151515;

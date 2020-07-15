@@ -19,7 +19,7 @@ class WineShop extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {isPopUpShown: false, isMenuShown: false, mainLogo: true, isGrapeMove: false};
+        this.state = {isPopUpShown: false, isMenuShown: false, mainLogo: true, isGrapeMove: false, isScaleBottom: false};
     }
 
 
@@ -116,12 +116,19 @@ class WineShop extends Component {
         const scroll = () => {
             window.scrollY === 0 ? this.setState({mainLogo: true}) : this.setState({mainLogo: false});
         };
+const scaleLandscape = () => {
+        console.log('scale', this.state.isScaleBottom)
+    this.setState({ isScaleBottom: !this.state.isScaleBottom });
+    // var doc = document.body.className ='bottom';
+    //     // doc.classList.add('bottomScale')}
+    var elem = document.querySelector('#bottom');
 
+}
         return (
 
             <div className="wrapper" id='wrapper' onWheel={scroll}>
 
-
+                {this.state.isScaleBotoom ? document.querySelector('#bottom').className = 'bottomScale' : null}
                 {this.state.mainLogo ?
                     <div className='fullLogoStatic'>
                         <img id='fullLogoImg' src={require('../pictures/full logo ver.jpg')} alt='logo'/></div> :
@@ -211,9 +218,9 @@ class WineShop extends Component {
 
                     </div>
                 </div>
-                <div className='bottom'>
+
+                <div id = 'bottom' className='bottom' onWheel={scaleLandscape}>
                     <div className='region'>About region</div>
-                    <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
                         <div className='climate'>The climate and diversity of soils in the Stara Zagora region present
                             great
                             opportunities for viticulture and winemaking. Our winery benefits from fantastic geography
@@ -221,7 +228,6 @@ class WineShop extends Component {
                             weather conditions that allow us to grow both exotic international grapes as well as local
                             traditional grape varieties.
                         </div>
-                    </ScrollAnimation>
                     <div><img className='glassLeft' id='glassLeft'
                               src={require('../pictures/glass 1.png')}/>
                     </div>
