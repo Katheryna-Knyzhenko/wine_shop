@@ -172,37 +172,69 @@ body {
 .grapeAnimate {
     animation: animateGrape 6s alternate  1 ease;
 }
+.grapeAnimate:hover {
+    animation-play-state: paused;
+}
 .bottleA {
-    animation: botA 3s alternate  1 ease;
+    animation: botA 4s alternate  1 ease;
+}
+.botA:hover {
+    animation-play-state: paused;
 }
 .grape4Animate {
     animation: animateGrape4 11s 1  ease-out;
 }
+.grape4Animate:hover {
+    animation-play-state: paused;
+}
 .grape3Animate {
     animation: animateGrape3 7s 1  ease-out;
+}
+.grape3Animate:hover {
+    animation-play-state: paused;
 }
 .grape2Animate {
     animation: animateGrape2 5s 1  ease-in-out;
 }
+.grape2Animate:hover {
+    animation-play-state: paused;
+}
 .grape1Animate {
     animation: animateGrape1 7s 1  ease-in;
+}
+.grape1Animate:hover {
+    animation-play-state: paused;
 }
 .introGrape13 {
     animation: introG13 10s 1  ease-out;
 }
+.introGrape13:hover {
+    animation-play-state: paused;
+}
 .introGrape12 {
     animation: introG12 13s 1  ease-in-out;
+}
+.introGrape12:hover {
+    animation-play-state: paused;
 }
 .singleGrapeMain31 {
     animation: singleG31 5s 1 ease-out;
 }
+.singleGrapeMain31:hover {
+    animation-play-state: paused;
+}
 .singleGrapeMain1 {
     animation: singleG1 7s 1 ease-in;
+}
+.singleGrapeMain1:hover {
+    animation-play-state: paused;
 }
 .singleGrapeMain3 {
     animation: singleG3 4s 1  ease-in-out;
 }
-
+.singleGrapeMain2:hover {
+    animation-play-state: paused;
+}
 @keyframes singleG31 {
     from {
         top: 70%;
@@ -396,6 +428,9 @@ transform-origin: -38% -38%;
     animation: spinLeafBig linear 4s infinite;
     transform-origin: -5% -38%;
 }
+.leafBigA:hover {
+    animation-play-state: paused;
+}
 @keyframes spinLeafBig {
     0% {transform: translate(-130px -130px) rotate(180deg)}
     100% {transform:  rotate(360deg)}
@@ -434,7 +469,9 @@ transform-origin: -38% -38%;
     animation: spinLeafS1 linear 6s infinite;
     transform-origin: -70px -20px;
 }
-
+.leafSmaller1:hover {
+    animation-play-state: paused;
+}
 .leafSmaller2 {
     z-index: 5;
     position: absolute;
@@ -450,6 +487,9 @@ transform-origin: -38% -38%;
 .leafSmaller2A {
     animation: circle linear 4s infinite;
 }
+.leafSmaller2:hover {
+    animation-play-state: paused;
+}
 .glassLeft {
     z-index: 5;
     position: absolute;
@@ -460,6 +500,9 @@ transform-origin: -38% -38%;
 .glassLA {
     animation: glassL 4s 2 ease;
     overflow: hidden;
+}
+.glassLA:hover {
+    animation-play-state: paused;
 }
 @keyframes glassL {
     from {
@@ -479,6 +522,9 @@ transform-origin: -38% -38%;
 .glassRA {
     animation: glassR 7s 2 ease-out;
     overflow: hidden;
+}
+.glassRA:hover {
+    animation-play-state: paused;
 }
 @keyframes glassR {
     from { top: 18%
