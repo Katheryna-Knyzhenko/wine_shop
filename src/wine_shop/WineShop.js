@@ -2,12 +2,8 @@ import React, {Component} from 'react';
 import './WineShop.css';
 import PopUp from "../pop_up/PopUp";
 import Menu from "../menu/Menu";
-import ScrollAnimation from 'react-animate-on-scroll';
-import animateIn from "animate.css/animate.min.css";
 import AOS from 'aos';
 import $ from 'jquery';
-import {Link} from "react-router-dom";
-
 
 AOS.init({
     debounceDelay: 50,
@@ -19,9 +15,14 @@ class WineShop extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {isPopUpShown: false, isMenuShown: false, mainLogo: true, isGrapeMove: false, isScaleBottom: false};
+        this.state = {
+            isPopUpShown: false,
+            isMenuShown: false,
+            mainLogo: true,
+            isGrapeMove: false,
+            isScaleBottom: false
+        };
     }
-
 
     render() {
         AOS.init({
@@ -29,42 +30,16 @@ class WineShop extends Component {
             once: true,
             mirror: true,
         });
-        var cursorX = 0;
-        var cursorX = 0;
         $(document).ready(function () {
-
-            // $.scrollify({
-            //     section : ".headerPicture",
-            //     sectionName : "section-name",
-            //     interstitialSection : "",
-            //     easing: "easeOutExpo",
-            //     scrollSpeed: 1100,
-            //     offset : 0,
-            //     scrollbars: true,
-            //     standardScrollElements: "",
-            //     setHeights: true,
-            //     overflowScroll: true,
-            //     updateHash: true,
-            //     touchScroll:true,
-            //
-            // });
-            // $.scrollify({
-            //     section : ".headerPicture",
-            // });
             var wrap = document.querySelector('#wrapper');
             wrap.addEventListener('mousemove', function (event) {
                 event.preventDefault();
                 var cursorX = event.pageX - $(this).offset().left;
                 var cursorY = event.pageY - $(this).offset().top;
                 var lastX = cursorX;
-
-
                 if (cursorX === lastX) {
                     var introGrape1 = document.querySelector('#grapeImg');
-
-
                     introGrape1.classList.add('grapeAnimate');
-
                     var grape4 = document.querySelector('#grape4Img');
                     grape4.classList.add(('grape4Animate'));
                     var grape3 = document.querySelector('#grape3Img');
@@ -95,16 +70,12 @@ class WineShop extends Component {
                     glassL.classList.add(('glassLA'));
                     var glassR = document.querySelector('#glassRight');
                     glassR.classList.add(('glassRA'));
-
                 }
                 if (cursorX !== lastX) {
                     wrap.attr('animation', 'paused')
                 }
             })
-
-
-        })
-
+        });
         const showMenu = () => {
             console.log('isMenuShown', this.state.isMenuShown);
             this.setState({isMenuShown: !this.state.isMenuShown})
@@ -112,18 +83,16 @@ class WineShop extends Component {
         const showPopUp = () => {
             this.setState({isPopUpShown: !this.state.isPopUpShown})
         };
-
         const scroll = () => {
             window.scrollY === 0 ? this.setState({mainLogo: true}) : this.setState({mainLogo: false});
         };
-const scaleLandscape = () => {
-        console.log('scale', this.state.isScaleBottom)
-    this.setState({ isScaleBottom: !this.state.isScaleBottom });
-    // var doc = document.body.className ='bottom';
-    //     // doc.classList.add('bottomScale')}
-    var elem = document.querySelector('#bottom');
-
-}
+        const scaleLandscape = () => {
+            console.log('scale', this.state.isScaleBottom);
+            this.setState({isScaleBottom: !this.state.isScaleBottom});
+            // var doc = document.body.className ='bottom';
+            //     // doc.classList.add('bottomScale')}
+            var elem = document.querySelector('#bottom');
+        };
         return (
 
             <div className="wrapper" id='wrapper' onWheel={scroll}>
@@ -135,7 +104,6 @@ const scaleLandscape = () => {
                     <div className='fullLogoMove'>
                         <img id='fullLogoImg' src={require('../pictures/Winehis..png')} alt='logo'/></div>
                 }
-
                 {this.state.isPopUpShown && <PopUp close={showPopUp}/>}
                 {this.state.isMenuShown && <Menu openClose={showMenu}/>}
                 <div className='head'>
@@ -145,7 +113,7 @@ const scaleLandscape = () => {
                         <div className='item call' onClick={showPopUp}>Call me plz</div>
                         <div className='item phone'><span>+35 987 654 32 10</span></div>
                     </div>
-                    <div onClick={showMenu} className='burger'><img src={require('../pictures/Vector.png')}
+                    <div onClick={showMenu} className='burger'><img alt='img' src={require('../pictures/Vector.png')}
                                                                     className='burgerLines'/>
                         <div className='burgerRound'/>
                     </div>
@@ -164,13 +132,13 @@ const scaleLandscape = () => {
                         <img data-aos='reveal-right' id='fullLogoImg' src={require('../pictures/full logo ver.jpg')}
                              alt='logo'/></div>
 
-                    <div><img data-aos='fade-in' data-aos='fade-out' id='grape4Img' className='grape4Img'
+                    <div><img alt='img' data-aos='fade-in' data-aos='fade-out' id='grape4Img' className='grape4Img'
                               src={require('../pictures/single-grape-main 4 (1).png')}/></div>
-                    <div><img className='grape1Img' id='grape1Img'
+                    <div><img alt='img' className='grape1Img' id='grape1Img'
                               src={require('../pictures/single-grape-main 1.png')}/></div>
-                    <div><img className='grape2Img' id='grape2Img'
+                    <div><img alt='img' className='grape2Img' id='grape2Img'
                               src={require('../pictures/single-grape-main 2 (1).png')}/></div>
-                    <div><img className='grape3Img' id='grape3Img'
+                    <div><img alt='img' className='grape3Img' id='grape3Img'
                               src={require('../pictures/single-grape-main 3.png')}/></div>
 
                     <div className='exploreText'>Explore the world of wine</div>
@@ -182,59 +150,60 @@ const scaleLandscape = () => {
                 </div>
                 <div className='middle'>
                     <div className='middlePicture'>
-                        <div><img id='introgrape13' className='introgrape13'
+                        <div><img alt='img' id='introgrape13' className='introgrape13'
                                   src={require('../pictures/intro-grape1 3 (2).png')}/></div>
-                        <div><img className='introgrape12' id='introgrape12'
+                        <div><img alt='img' className='introgrape12' id='introgrape12'
                                   src={require('../pictures/intro-grape1 2.png')}/></div>
-                        <div><img id='singleGrapeMain31' className='singleGrapeMain31'
+                        <div><img alt='img' id='singleGrapeMain31' className='singleGrapeMain31'
                                   src={require('../pictures/single-grape-main 3 (1).png')}/>
                         </div>
-                        <div><img className='singleGrapeMain1' id='singleGrapeMain1'
+                        <div><img alt='img' className='singleGrapeMain1' id='singleGrapeMain1'
                                   src={require('../pictures/single-grape-main 1 (1).png')}/>
                         </div>
-                        <div><img className='singleGrapeMain3' id='singleGrapeMain3'
+                        <div><img alt='img' className='singleGrapeMain3' id='singleGrapeMain3'
                                   src={require('../pictures/single-grape-main 3.png')}/>
                         </div>
-                        <div><img src={require('../pictures/Ellipse 4.png')} className='greenCircle'></img><img
+                        <div><img alt='img' src={require('../pictures/Ellipse 4.png')} className='greenCircle'/><img
+                            alt='img'
                             className='ellipse' src={require('../pictures/Ellipse 2.png')}/>
-                            <img className='n1941' src={require('../pictures/1901 (1).png')}/>
+                            <img alt='img' className='n1941' src={require('../pictures/1901 (1).png')}/>
                         </div>
-                        <div  className='midText'>Give the wine lover in
+                        <div className='midText'>Give the wine lover in
                             your life a gift they will love. <a className='linkWine'
-                                                                href='https://snipp.ru/jquery/cursor-coords'>Wine
+                                                                href='https://www.linkedin.com/in/katheryna-knyzhenko-1356651a3/'>Wine
                                 trails</a> are
                             a fun way of exploring the great food and wine venues we have in the city while making great
                             memories
                         </div>
-                        <div><img id='leafBig' className='leafBig'
+                        <div><img alt='img' id='leafBig' className='leafBig'
                                   src={require('../pictures/kisspng-leaf-clip-art-grape-vine-leaf-5a754b8e03a590 3.png')}/>
                         </div>
-                        <div><img className='leafSmaller1' id='leafSmaller1'
+                        <div><img alt='img' className='leafSmaller1' id='leafSmaller1'
                                   src={require('../pictures/kisspng-leaf-clip-art-grape-vine-leaf-5a754b8e03a590 2.png')}/>
                         </div>
-                        <div><img className='leafSmaller2' id='leafSmaller2'
+                        <div><img alt='img' className='leafSmaller2' id='leafSmaller2'
                                   src={require('../pictures/kisspng-leaf-clip-art-grape-vine-leaf-5a754b8e03a590 1.png')}/>
                         </div>
 
                     </div>
                 </div>
 
-                <div id = 'bottom' className='bottom' onWheel={scaleLandscape}>
+                <div id='bottom' className='bottom' onWheel={scaleLandscape}>
                     <div className='region'>About region</div>
-                        <div className='climate'>The climate and diversity of soils in the Stara Zagora region present
-                            great
-                            opportunities for viticulture and winemaking. Our winery benefits from fantastic geography
-                            and
-                            weather conditions that allow us to grow both exotic international grapes as well as local
-                            traditional grape varieties.
-                        </div>
-                    <div><img className='glassLeft' id='glassLeft'
+                    <div className='climate'>The climate and diversity of soils in the Stara Zagora region present
+                        great
+                        opportunities for viticulture and winemaking. Our winery benefits from fantastic geography
+                        and
+                        weather conditions that allow us to grow both exotic international grapes as well as local
+                        traditional grape varieties.
+                    </div>
+                    <div><img alt='img' className='glassLeft' id='glassLeft'
                               src={require('../pictures/glass 1.png')}/>
                     </div>
                     <button className='recButton'><span className='textLearnMore'>
                   Learn more</span>
                     </button>
-                    <div><img className='glassRight' id='glassRight'
+                    <div><img alt='img' className='glassRight' id='glassRight'
                               src={require('../pictures/glass 2.png')}/>
                     </div>
                     <div className='bottomPicture'/>

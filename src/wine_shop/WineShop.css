@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap);
 
 body {
-    cursor: url("../pictures/icons8-w-в-круге-24.png"),  auto;
+    cursor: url("../pictures/icons8-w-в-круге-24.png"), auto;
 }
 
 .wrapper {
@@ -12,6 +12,7 @@ body {
     z-index: 0;
     overflow: hidden;
 }
+
 .head {
     height: 20%;
     position: relative;
@@ -20,30 +21,46 @@ body {
     z-index: 1;
 }
 .headerPicture {
+    position: relative;
+    top: 0;
+    opacity: 0.7;
+    background: black url("../pictures/201905_or 1.jpg") center center;
+    background-blend-mode: hard-light;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    display: block;
+    background-position: 50%;
+    margin: auto;
+    box-shadow: 0 0 48px 48px #151515 inset;
+    z-index: 2;
     scroll-behavior: smooth;
 }
 .fullLogoStatic {
+    z-index: 8;
+    top: 0;
+    left: 0.6%;
+    position: absolute;
+}
 
-     z-index: 8;
-     top:0;
-     left: 0.6%;
-     position: absolute;
- }
 .fullLogoMove {
     position: fixed;
     z-index: 10;
-    top:0.9%;
+    top: 0.9%;
     left: 0.6%;
 }
+
 .fullLogoImg {
     width: 12.27px;
     height: 15px;
     background: #FFFFFF;
-    top:0.9%;
+    top: 0.9%;
     left: 0.6%;
     position: fixed;
     z-index: 9;
 }
+
 .menu {
     position: absolute;
     z-index: 5;
@@ -58,18 +75,21 @@ body {
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
-
 }
- .call {
+
+.call {
     cursor: pointer;
 }
+
 .menu span {
     color: #ADC62C;
 }
+
 .item {
     margin: 0 45px;
     display: flex;
 }
+
 .burgerRound {
     position: absolute;
     z-index: 4;
@@ -82,6 +102,7 @@ body {
     box-sizing: border-box;
     border-radius: 45px 45px;
 }
+
 .burgerRound:hover {
     width: 46px;
     height: 46px;
@@ -90,62 +111,13 @@ body {
     border-radius: 45px 45px;
     transition: 1s linear;
 }
+
 .burgerLines {
     position: absolute;
     z-index: 6;
     right: 5.9%;
     top: 9.3%;
     cursor: pointer;
-}
-.grape4Img {
-    position: absolute;
-    z-index: 4;
-    top: 30%;
-    left: 10%;
-}
-.grape1Img {
-    position: absolute;
-    z-index: 4;
-    top:80%;
-    left:0;
-}
-.grape2Img {
-    position: absolute;
-    z-index: 4;
-    top:20%;
-    right:0;
-}
-.grape3Img {
-    position: absolute;
-    z-index: 4;
-    top:75%;
-    right:20%;
-}
-.headerPicture {
-    position: relative;
-    top: 0;
-   opacity: 0.7;
-    background: black url("../pictures/201905_or 1.jpg") center center;
-    background-blend-mode: hard-light;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    overflow: hidden;
-    display: block;
-    background-position: 50%;
-    margin: auto;
-    box-shadow:  0 0 48px 48px  #151515 inset;
-    z-index: 2;
-}
-
-.grape {
-    z-index: 4;
-    top: 18%;
-    left: 38%;
-    width: 25%;
-    height:100%;
-    position: absolute;
-    display: block;
 }
 .grapeImg {
     width: 100%;
@@ -156,143 +128,64 @@ body {
     top: 50%;
     left: 45%;
     width: 25%;
-    height:100%;
+    height: 100%;
     position: absolute;
     display: block;
 }
-
-.introgrape13{
-     z-index: 5;
-     position: absolute;
-     display: block;
-     top: 40%;
-     left: 0;
-    animation: introGrape13Animation 6s 1 reverse ease-in;
- }
-.grapeAnimate {
-    animation: animateGrape 6s alternate  1 ease;
+.bottleA {
+    animation: botA 4s alternate 1 ease;
 }
+@keyframes botA {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.grape {
+    z-index: 4;
+    top: 18%;
+    left: 38%;
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    display: block;
+}
+.grapeAnimate {
+    animation: animateGrape 6s alternate 1 ease;
+}
+
 .grapeAnimate:hover {
     animation-play-state: paused;
 }
-.bottleA {
-    animation: botA 4s alternate  1 ease;
+@keyframes animateGrape {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
-.botA:hover {
-    animation-play-state: paused;
+.grape4Img {
+    position: absolute;
+    z-index: 4;
+    top: 30%;
+    left: 10%;
 }
 .grape4Animate {
-    animation: animateGrape4 11s 1  ease-out;
+    animation: animateGrape4 11s 1 ease-out;
 }
+
 .grape4Animate:hover {
     animation-play-state: paused;
 }
-.grape3Animate {
-    animation: animateGrape3 7s 1  ease-out;
-}
-.grape3Animate:hover {
-    animation-play-state: paused;
-}
-.grape2Animate {
-    animation: animateGrape2 5s 1  ease-in-out;
-}
-.grape2Animate:hover {
-    animation-play-state: paused;
-}
-.grape1Animate {
-    animation: animateGrape1 7s 1  ease-in;
-}
-.grape1Animate:hover {
-    animation-play-state: paused;
-}
-.introGrape13 {
-    animation: introG13 10s 1  ease-out;
-}
-.introGrape13:hover {
-    animation-play-state: paused;
-}
-.introGrape12 {
-    animation: introG12 13s 1  ease-in-out;
-}
-.introGrape12:hover {
-    animation-play-state: paused;
-}
-.singleGrapeMain31 {
-    animation: singleG31 5s 1 ease-out;
-}
-.singleGrapeMain31:hover {
-    animation-play-state: paused;
-}
-.singleGrapeMain1 {
-    animation: singleG1 7s 1 ease-in;
-}
-.singleGrapeMain1:hover {
-    animation-play-state: paused;
-}
-.singleGrapeMain3 {
-    animation: singleG3 4s 1  ease-in-out;
-}
-.singleGrapeMain2:hover {
-    animation-play-state: paused;
-}
-@keyframes singleG31 {
-    from {
-        top: 70%;
-
-    }
-    to {
-        top: 180%;
-    }}
-@keyframes singleG1 {
-    from {
-        top: 82%;
-
-    }
-    to {
-        top: 180%;
-    }}
-@keyframes singleG3 {
-    from {
-        top: 40%;
-
-    }
-    to {
-        top: 180%;
-    }}
-
-
-@keyframes introG13 {
-    from {
-        top: 40%;
-
-    }
-    to {
-        top: 180%;
-    }}
-@keyframes introG12 {
-    from {
-        top: 20%;
-
-    }
-    to {
-        top: 180%;
-    }}
-@keyframes animateGrape1 {
-    from {
-        top: 80%;
-
-    }
-    to {
-        top: 180%;
-    }}
-@keyframes animateGrape2 {
-    from {
-        top: 20%;
-
-    }
-    to {
-        top: 180%;
-    }}
 @keyframes animateGrape4 {
     from {
         top: 30%;
@@ -300,7 +193,21 @@ body {
     }
     to {
         top: 180%;
-    }}
+    }
+}
+.grape3Img {
+    position: absolute;
+    z-index: 4;
+    top: 75%;
+    right: 20%;
+}
+.grape3Animate {
+    animation: animateGrape3 7s 1 ease-out;
+}
+
+.grape3Animate:hover {
+    animation-play-state: paused;
+}
 @keyframes animateGrape3 {
     from {
         top: 75%;
@@ -308,16 +215,74 @@ body {
     }
     to {
         top: 180%;
-    }}
-@keyframes animateGrape {
-    0%   { transform: translateY(0); }
-    50%  { transform: translateY(-100px); }
-    100% { transform: translateY(0); }
+    }
 }
-@keyframes botA {
-    0%   { transform: translateY(0); }
-    50%  { transform: translateY(-100px); }
-    100% { transform: translateY(0); }
+.grape2Img {
+    position: absolute;
+    z-index: 4;
+    top: 20%;
+    right: 0;
+}
+.grape2Animate {
+    animation: animateGrape2 5s 1 ease-in-out;
+}
+
+.grape2Animate:hover {
+    animation-play-state: paused;
+}
+@keyframes animateGrape2 {
+    from {
+        top: 20%;
+
+    }
+    to {
+        top: 180%;
+    }
+}
+.grape1Img {
+    position: absolute;
+    z-index: 4;
+    top: 80%;
+    left: 0;
+}
+.grape1Animate {
+    animation: animateGrape1 7s 1 ease-in;
+}
+
+.grape1Animate:hover {
+    animation-play-state: paused;
+}
+@keyframes animateGrape1 {
+    from {
+        top: 80%;
+
+    }
+    to {
+        top: 180%;
+    }
+}
+.introgrape13 {
+    z-index: 5;
+    position: absolute;
+    display: block;
+    top: 40%;
+    left: 0;
+    animation: introGrape13Animation 6s 1 reverse ease-in;
+}
+.introGrape13 {
+    animation: introG13 10s 1 ease-out;
+}
+@keyframes introG13 {
+    from {
+        top: 40%;
+
+    }
+    to {
+        top: 180%;
+    }
+}
+.introGrape13:hover {
+    animation-play-state: paused;
 }
 @keyframes introGrape13Animation {
     from {
@@ -329,12 +294,29 @@ body {
         left: 0;
     }
 }
+
 .introgrape12 {
     z-index: 5;
     position: absolute;
     display: block;
     top: 20%;
     right: 0;
+}
+.introGrape12 {
+    animation: introG12 13s 1 ease-in-out;
+}
+
+.introGrape12:hover {
+    animation-play-state: paused;
+}
+@keyframes introG12 {
+    from {
+        top: 20%;
+
+    }
+    to {
+        top: 180%;
+    }
 }
 .singleGrapeMain31 {
     z-index: 5;
@@ -343,6 +325,22 @@ body {
     top: 70%;
     left: 20%;
 }
+.singleGrapeMain31 {
+    animation: singleG31 5s 1 ease-out;
+}
+
+.singleGrapeMain31:hover {
+    animation-play-state: paused;
+}
+@keyframes singleG31 {
+    from {
+        top: 70%;
+
+    }
+    to {
+        top: 180%;
+    }
+}
 .singleGrapeMain1 {
     z-index: 5;
     position: absolute;
@@ -350,6 +348,23 @@ body {
     top: 82%;
     left: 44%;
 }
+.singleGrapeMain1 {
+    animation: singleG1 7s 1 ease-in;
+}
+
+.singleGrapeMain1:hover {
+    animation-play-state: paused;
+}
+@keyframes singleG1 {
+    from {
+        top: 82%;
+
+    }
+    to {
+        top: 180%;
+    }
+}
+
 .singleGrapeMain3 {
     z-index: 5;
     position: absolute;
@@ -357,55 +372,71 @@ body {
     top: 40%;
     right: 30%;
 }
+.singleGrapeMain3 {
+    animation: singleG3 4s 1 ease-in-out;
+}
+.singleGrapeMain3:hover {
+    animation-play-state: paused;
+}
+@keyframes singleG3 {
+    from {
+        top: 40%;
+
+    }
+    to {
+        top: 180%;
+    }
+}
+
 .greenCircle {
-    z-index: 8;
+    z-index: 5;
     position: absolute;
     display: block;
     width: 579px;
     height: 579px;
     top: 54%;
     left: 38%;
+}
 
-}
-.greenCircle:hover  {
-    animation: spinGreenCircle 5s infinite ease;
-    }
-.greenCircle:hover  .n1941{
-    animation: spin1941 5s infinite ease;
-}
-@keyframes spin1941 {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
+.greenCircle:hover {
+    animation: spinGreenCircle  5s infinite ease;
 }
 @keyframes spinGreenCircle {
     from {
-        transform:rotate(0deg);
+        transform: rotate(0deg);
     }
     to {
-        transform:rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
-@keyframes moveEllipse {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
-}
-.ellipse  {
+/*.n1941:hover{*/
+/*    animation: spin1941 5s infinite ease;*/
+/*}*/
+/*.ellipse:hover {*/
+/*    animation:  moveEllipse 5s infinite ease;*/
+/*}*/
+
+.ellipse {
     z-index: 5;
     position: absolute;
     display: block;
     top: 60%;
     left: 45%;
 }
-
+.ellipse:hover {
+    animation: moveEllipse 5s infinite ease;
+    border: 1px solid #ADC62C;
+    border-radius: 50%;
+}
+@keyframes moveEllipse {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 .n1941 {
     z-index: 5;
@@ -414,47 +445,43 @@ body {
     top: 64%;
     left: 49%;
 }
+.n1941:hover {
+    animation: spin1941 5s infinite ease;
+}
+@keyframes spin1941 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 .leafBig {
     z-index: 7;
     position: absolute;
     display: block;
     top: 72%;
     right: 36%;
-transform-origin: -38% -38%;
-
-
+    transform-origin: -38% -38%;
 }
+
 .leafBigA {
     animation: spinLeafBig linear 4s infinite;
     transform-origin: -5% -38%;
 }
+
 .leafBigA:hover {
     animation-play-state: paused;
 }
-@keyframes spinLeafBig {
-    0% {transform: translate(-130px -130px) rotate(180deg)}
-    100% {transform:  rotate(360deg)}
 
-}
-@keyframes spinLeafS1 {
-    from {
-        transform:  rotate(0deg) translateY(10em)
-        rotate(0deg) translateY(-10em)
+@keyframes spinLeafBig {
+    0% {
+        transform: translate(-130px -130px) rotate(180deg)
     }
-    to {
-        transform:  rotate(360deg) translateY(-15em)
-        rotate(360deg)
+    100% {
+        transform: rotate(360deg)
     }
-}
-@keyframes spinLeafS2 {
-    from {
-        transform:  rotate(0deg) translateY(-10em)
-        rotate(0deg) translateY(-10em)
-    }
-    to {
-        transform:  rotate(180deg) translateY(-20em)
-        rotate(360deg)
-    }
+
 }
 .leafSmaller1 {
     z-index: 5;
@@ -465,12 +492,22 @@ transform-origin: -38% -38%;
     transform-origin: -70px -20px;
     transform-style: preserve-3d;
 }
+
 .leafSmaller1A {
     animation: spinLeafS1 linear 6s infinite;
     transform-origin: -70px -20px;
 }
+
 .leafSmaller1:hover {
     animation-play-state: paused;
+}
+@keyframes spinLeafS1 {
+    from {
+        transform: rotate(0deg) translateY(10em) rotate(0deg) translateY(-10em)
+    }
+    to {
+        transform: rotate(360deg) translateY(-15em) rotate(360deg)
+    }
 }
 .leafSmaller2 {
     z-index: 5;
@@ -479,17 +516,30 @@ transform-origin: -38% -38%;
     top: 54%;
     right: 55%;
     transform-origin: 120% bottom;
-
-}
-@keyframes circle {
-    to { transform: rotate(1turn); }
 }
 .leafSmaller2A {
     animation: circle linear 4s infinite;
 }
-.leafSmaller2:hover {
+
+.leafSmaller2A:hover {
     animation-play-state: paused;
 }
+
+@keyframes circle {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/*@keyframes spinLeafS2 {*/
+/*    from {*/
+/*        transform: rotate(0deg) translateY(-10em) rotate(0deg) translateY(-10em)*/
+/*    }*/
+/*    to {*/
+/*        transform: rotate(180deg) translateY(-20em) rotate(360deg)*/
+/*    }*/
+/*}*/
+
 .glassLeft {
     z-index: 5;
     position: absolute;
@@ -497,13 +547,16 @@ transform-origin: -38% -38%;
     top: 30%;
     left: 0
 }
+
 .glassLA {
     animation: glassL 4s 2 ease;
     overflow: hidden;
 }
+
 .glassLA:hover {
     animation-play-state: paused;
 }
+
 @keyframes glassL {
     from {
         top: 30%;
@@ -512,6 +565,7 @@ transform-origin: -38% -38%;
         top: 80%
     }
 }
+
 .glassRight {
     z-index: 5;
     position: absolute;
@@ -519,21 +573,26 @@ transform-origin: -38% -38%;
     top: 18%;
     right: 0
 }
+
 .glassRA {
     animation: glassR 7s 2 ease-out;
     overflow: hidden;
 }
+
 .glassRA:hover {
     animation-play-state: paused;
 }
+
 @keyframes glassR {
-    from { top: 18%
+    from {
+        top: 18%
     }
     to {
         top: 58%
     }
 }
- @font-face {
+
+@font-face {
     font-family: 'Abraham Lincoln';
     src: url('../fonts/AbrahamLincoln.eot');
     src: local('☺'), url('../fonts/AbrahamLincoln.woff') format('woff'), url('../fonts/AbrahamLincoln.ttf')
@@ -541,15 +600,16 @@ transform-origin: -38% -38%;
     font-weight: normal;
     font-style: normal;
 }
+
 .exploreText {
     z-index: 5;
     top: 58%;
     left: 25%;
     width: 55%;
-    height:100%;
+    height: 100%;
     position: absolute;
     display: block;
-    font-family:'Abraham Lincoln';
+    font-family: 'Abraham Lincoln';
     font-style: normal;
     font-weight: normal;
     font-size: 90px;
@@ -557,6 +617,7 @@ transform-origin: -38% -38%;
     color: white;
     text-align: center;
 }
+
 .region {
     font-family: Abraham Lincoln;
     font-style: normal;
@@ -567,6 +628,7 @@ transform-origin: -38% -38%;
     text-align: center;
     padding-top: 1em;
 }
+
 .climate {
     font-family: 'Roboto', sans-serif;
     font-style: italic;
@@ -580,19 +642,17 @@ transform-origin: -38% -38%;
     padding-top: 2em;
     font-style: italic;
     text-align: center;
-
 }
-
 
 .learnAbout {
     z-index: 5;
     top: 73%;
     left: 25%;
     width: 55%;
-    height:100%;
+    height: 100%;
     position: absolute;
     color: white;
-    font-family: 'Roboto',  sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: italic;
     font-weight: 500;
     font-size: 18px;
@@ -604,8 +664,9 @@ transform-origin: -38% -38%;
     position: relative;
     height: 60%;
 }
+
 .middlePicture {
-    background:  url("../pictures/vinice-3 1.png");
+    background: url("../pictures/vinice-3 1.png");
     background-blend-mode: hard-light;
     background-repeat: no-repeat;
     width: 100%;
@@ -614,21 +675,24 @@ transform-origin: -38% -38%;
     position: absolute;
     background-size: cover;
     background-position: right bottom;
-    box-shadow:  0 0 48px 48px  #151515 inset;
+    box-shadow: 0 0 48px 48px #151515 inset;
 }
+
 .bottom {
     height: 20%;
     position: relative;
-    background: url("../pictures/lines 1 (1).png")  #151515;
+    background: url("../pictures/lines 1 (1).png") #151515;
     background-blend-mode: overlay;
     background-size: contain;
     width: 100%;
-    box-shadow:  0 0 48px 48px  #151515 inset;
+    box-shadow: 0 0 48px 48px #151515 inset;
 }
+
 .bottomScale {
-    background: url("../pictures/lines 1 (1).png")  #151515;
+    background: url("../pictures/lines 1 (1).png") #151515;
     transform: scale(4);
 }
+
 .recButton {
     background-color: #151515;
     position: absolute;
@@ -641,9 +705,11 @@ transform-origin: -38% -38%;
     border-radius: 38.5px;
     cursor: default;
 }
+
 .recButton:focus {
     outline: none;
 }
+
 .textLearnMore {
     position: absolute;
     z-index: 6;
@@ -660,6 +726,7 @@ transform-origin: -38% -38%;
     color: #FFFFFF;
     cursor: default;
 }
+
 .midText {
     position: absolute;
     width: 540px;
@@ -677,21 +744,24 @@ transform-origin: -38% -38%;
     transition-property: background-color;
     visibility: hidden;
 }
-.middle:hover .midText{
+
+.middle:hover .midText {
 
     animation: textShow 4s alternate infinite ease-in-out;
     transition-delay: 2s;
 }
+
 @keyframes textShow {
-   from {
-       opacity: 0.4;
-       visibility: visible;
-   }
+    from {
+        opacity: 0.4;
+        visibility: visible;
+    }
     to {
         opacity: 1;
         visibility: visible;
     }
 }
+
 [data-aos="reveal-right"] {
     transform: scaleX(1);
     transform-origin: 100% 0;
@@ -707,13 +777,15 @@ transform-origin: -38% -38%;
 .aboutUsBut {
     cursor: pointer;
 }
+
 .aboutUsBut:hover {
     animation: blur .75s ease-out infinite;
 }
+
 @keyframes blur {
 
     from {
-        text-shadow:0 0 10px #fff,
+        text-shadow: 0 0 10px #fff,
         0 0 10px #fff,
         0 0 25px #fff,
         0 0 25px #fff,
@@ -734,11 +806,12 @@ transform-origin: -38% -38%;
 
     }
 }
+
 .linkWine {
     color: #ADC62C;
-    display:inline-block;
-
+    display: inline-block;
 }
+
 .linkWine:hover {
     cursor: default;
 }
