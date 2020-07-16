@@ -401,6 +401,15 @@ body {
 .greenCircle:hover {
     animation: spinGreenCircle  5s infinite ease;
     transform-style: preserve-3d;
+
+}
+.greenCircle:hover + .ellipse {
+     animation: moveEllipse 5s infinite ease;
+     border: 1px solid #ADC62C;
+     border-radius: 50%;
+ }
+.greenCircle:hover + .ellipse + .n1941 {
+    animation: spin1941 5s infinite ease;
 }
 @keyframes spinGreenCircle {
     from {
@@ -412,13 +421,6 @@ body {
     }
 }
 
-/*.n1941:hover{*/
-/*    animation: spin1941 5s infinite ease;*/
-/*}*/
-/*.ellipse:hover {*/
-/*    animation:  moveEllipse 5s infinite ease;*/
-/*}*/
-
 .ellipse {
     z-index: 5;
     position: absolute;
@@ -426,11 +428,7 @@ body {
     top: 60%;
     left: 45%;
 }
-.ellipse:hover {
-    animation: moveEllipse 5s infinite ease;
-    border: 1px solid #ADC62C;
-    border-radius: 50%;
-}
+
 @keyframes moveEllipse {
     from {
         transform: rotate(0deg);
@@ -446,9 +444,6 @@ body {
     display: block;
     top: 64%;
     left: 49%;
-}
-.n1941:hover {
-    animation: spin1941 5s infinite ease;
 }
 @keyframes spin1941 {
     from {
