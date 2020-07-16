@@ -400,13 +400,15 @@ body {
 
 .greenCircle:hover {
     animation: spinGreenCircle  5s infinite ease;
+    transform-style: preserve-3d;
 }
 @keyframes spinGreenCircle {
     from {
         transform: rotate(0deg);
+
     }
     to {
-        transform: rotate(360deg);
+        transform: rotateY(180deg);
     }
 }
 
@@ -434,7 +436,7 @@ body {
         transform: rotate(0deg);
     }
     to {
-        transform: rotate(360deg);
+        transform: rotateY(360deg);
     }
 }
 
@@ -453,7 +455,7 @@ body {
         transform: rotate(0deg);
     }
     to {
-        transform: rotate(360deg);
+        transform: rotateY(360deg);
     }
 }
 .leafBig {
@@ -468,10 +470,6 @@ body {
 .leafBigA {
     animation: spinLeafBig linear 4s infinite;
     transform-origin: -5% -38%;
-}
-
-.leafBigA:hover {
-    animation-play-state: paused;
 }
 
 @keyframes spinLeafBig {
@@ -498,9 +496,6 @@ body {
     transform-origin: -70px -20px;
 }
 
-.leafSmaller1:hover {
-    animation-play-state: paused;
-}
 @keyframes spinLeafS1 {
     from {
         transform: rotate(0deg) translateY(10em) rotate(0deg) translateY(-10em)
@@ -519,10 +514,6 @@ body {
 }
 .leafSmaller2A {
     animation: circle linear 4s infinite;
-}
-
-.leafSmaller2A:hover {
-    animation-play-state: paused;
 }
 
 @keyframes circle {
