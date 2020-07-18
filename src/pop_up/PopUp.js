@@ -7,8 +7,8 @@ function PopUp(props) {
             <div className='cross1' onClick={props.close}><img alt='img' src={require('../pictures/Vector (1).png')}/>
             </div>
             <div className='formPop'>
-                <input className='nameInput' value='Name'/>
-                <input className='telInput' value='Phone'/>
+                <input className='nameInput' placeholder='Name'/>
+                <input className='telInput' placeholder='Phone'/>
                 <div className='userInfo'><span className='ageChoose'>Your age:</span>
                     <div className='agy'><label htmlFor='check1'>10 - 20<input id='check1' type="radio" name="n1"
                                                                                className='age20'/></label></div>

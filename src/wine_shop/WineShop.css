@@ -405,8 +405,6 @@ body {
 }
 .greenCircle:hover + .ellipse {
      animation: moveEllipse 5s infinite ease;
-     border: 1px solid #ADC62C;
-     border-radius: 50%;
  }
 .greenCircle:hover + .ellipse + .n1941 {
     animation: spin1941 5s infinite ease;
