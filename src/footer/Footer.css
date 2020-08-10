@@ -58,7 +58,9 @@
     width: 252px;
     height: 54px;
 }
-
+.form input {
+    outline: none;
+}
 .send span{
     position: absolute;
     font-family: Roboto, sans-serif;
@@ -82,4 +84,5 @@
 }
 .send:focus {
    outline: none;
+    background-color: #ADC62C;
 }

@@ -22,9 +22,9 @@ function PopUp(props) {
 
                 </div>
                 <div className='buttons'>
-                    <div className='downloadFoto'><span>Download your photo:</span>
-                        <button className='cloudB'/>
-                    </div>
+                    <button className='downloadFoto'><span>Download your photo:</span>
+                        <div className='cloudB'/>
+                    </button>
                     <button className='sendB'><span className='sendT'>Send</span></button>
                 </div>
             </div>

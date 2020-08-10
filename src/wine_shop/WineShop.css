@@ -515,14 +515,6 @@ body {
     }
 }
 
-/*@keyframes spinLeafS2 {*/
-/*    from {*/
-/*        transform: rotate(0deg) translateY(-10em) rotate(0deg) translateY(-10em)*/
-/*    }*/
-/*    to {*/
-/*        transform: rotate(180deg) translateY(-20em) rotate(360deg)*/
-/*    }*/
-/*}*/
 
 .glassLeft {
     z-index: 5;
@@ -692,6 +684,7 @@ body {
 
 .recButton:focus {
     outline: none;
+    background-color: #ADC62C;
 }
 
 .textLearnMore {

@@ -43,7 +43,9 @@
     font-size: 14px;
     line-height: 16px;
 }
-
+.telInput, .nameInput:focus {
+    outline: none;
+}
 .telInput {
     left: 140px;
     top: 174px;
@@ -114,7 +116,10 @@
     background: #2E2E2E;
     border-radius: 42px;
 }
-
+.downloadFoto:focus {
+    outline: none;
+    background-color: #ADC62C;
+}
 .downloadFoto > span {
     display: flex;
     position: relative;
@@ -143,10 +148,11 @@
     background-color: #151515;
     outline: none;
     cursor: pointer;
-
-
 }
-
+.sendB:focus {
+    background-color: #ADC62C;
+    outline: none;
+}
 .sendT {
     font-family: Roboto;
     font-style: normal;

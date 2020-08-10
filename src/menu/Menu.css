@@ -44,7 +44,10 @@
     text-align: center;
     color: #FFFFFF;
 }
-
+.aboutUs:hover, .history:hover, .regionW:hover, .contacts:hover, .prod:hover, .news:hover {
+    color: #ADC62C;
+    cursor: pointer;
+}
 .aboutUs {
     width: 64px;
     height: 19px;
